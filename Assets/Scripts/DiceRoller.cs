@@ -24,6 +24,12 @@ public class DiceRoller : MonoBehaviour {
     public Sprite DiceFace5;
     public Sprite DiceFace6;
 
+    public bool IsDoneRolling = false;
+
+    public void NewTurn() {
+    	IsDoneRolling = false;
+    }
+
     public void RollTheDice() {
 
     	diceValue = Random.Range(1, 7);
@@ -39,12 +45,12 @@ public class DiceRoller : MonoBehaviour {
     		this.GetComponent<Image>().sprite = DiceFace4;
     	} else if(diceValue == 5) {
     		this.GetComponent<Image>().sprite = DiceFace5;
-    	} else if(diceValue == 6) {
+    	} else {
     		this.GetComponent<Image>().sprite = DiceFace6;
     	}     
 
-    	Debug.Log(diceValue);
-    }
+    	IsDoneRolling = true;
 
+    }
 
 }
