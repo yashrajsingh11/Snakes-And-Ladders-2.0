@@ -6,8 +6,7 @@ using UnityEngine.UI;
 public class DiceRoller : MonoBehaviour {
     // Start is called before the first frame update
     void Start() {
-        diceValue = 6;
-        diceTotal = 0;
+    	theStateManager = GameObject.FindObjectOfType<StateManager>();
     }
 
     // Update is called once per frame
@@ -15,8 +14,7 @@ public class DiceRoller : MonoBehaviour {
         
     }
 
-    public int diceValue;
-    public int diceTotal;
+    StateManager theStateManager;
     public Sprite DiceFace1;
     public Sprite DiceFace2;
     public Sprite DiceFace3;
@@ -24,32 +22,29 @@ public class DiceRoller : MonoBehaviour {
     public Sprite DiceFace5;
     public Sprite DiceFace6;
 
-    public bool IsDoneRolling = false;
-
-    public void NewTurn() {
-    	IsDoneRolling = false;
-    }
-
     public void RollTheDice() {
 
-    	diceValue = Random.Range(1, 7);
-    	diceTotal = diceTotal + diceValue;
+    	if(theStateManager.IsDoneRolling == true)  {
+    		return;
+    	}
 
-    	if(diceValue == 1) {		
+    	theStateManager.diceValue = Random.Range(1, 7);
+
+    	if(theStateManager.diceValue == 1) {		
     		this.GetComponent<Image>().sprite = DiceFace1;
-    	} else if(diceValue == 2) {
+    	} else if(theStateManager.diceValue == 2) {
     		this.GetComponent<Image>().sprite = DiceFace2;
-    	} else if(diceValue == 3) {
+    	} else if(theStateManager.diceValue == 3) {
     		this.GetComponent<Image>().sprite = DiceFace3;
-    	} else if(diceValue == 4) {
+    	} else if(theStateManager.diceValue == 4) {
     		this.GetComponent<Image>().sprite = DiceFace4;
-    	} else if(diceValue == 5) {
+    	} else if(theStateManager.diceValue == 5) {
     		this.GetComponent<Image>().sprite = DiceFace5;
     	} else {
     		this.GetComponent<Image>().sprite = DiceFace6;
     	}     
 
-    	IsDoneRolling = true;
+    	theStateManager.IsDoneRolling = true;
 
     }
 
