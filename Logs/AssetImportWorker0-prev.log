@@ -1,0 +1,638 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.0f1 (c7b5465681fb) revision 13088070'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home Single Language; OS build 19041.867; Version 2004; 64bit' Language: 'en' Physical Memory: 8043 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.0f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/Abhishek/Documents/GitHub/Snakes-And-Ladders
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+55200
+Successfully changed project path to: C:/Users/Abhishek/Documents/GitHub/Snakes-And-Ladders
+C:/Users/Abhishek/Documents/GitHub/Snakes-And-Ladders
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 23.92 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.0f1 (c7b5465681fb)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Abhishek/Documents/GitHub/Snakes-And-Ladders/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce MX250 (ID=0x1d13)
+    Vendor:   
+    VRAM:     1983 MB
+    Driver:   27.21.14.5730
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56004
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002668 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 24.53 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.231 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.000868 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.997 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1118 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 57.0 MB.
+System memory in use after: 57.1 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1562.
+Total: 2.390500 ms (FindLiveObjects: 0.226000 ms CreateObjectMapping: 0.072700 ms MarkObjects: 2.013900 ms  DeleteObjects: 0.076500 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Scripts/DiceRoller.cs
+  artifactKey: Guid(cce8f0c24cbfb914388e7cbae9625d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DiceRoller.cs using Guid(cce8f0c24cbfb914388e7cbae9625d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ceeafd2b6fb923434a474a3d1211cc43') in 0.044173 seconds
+  Import took 0.046825 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 177.622671 seconds.
+  path: Assets/Scripts/Tile.cs
+  artifactKey: Guid(34c8e6cd23007ca498a34da22471fc8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tile.cs using Guid(34c8e6cd23007ca498a34da22471fc8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2325f8f22a8d051f7e64721a0731312') in 0.005166 seconds
+  Import took 0.008244 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.039219 seconds.
+  path: Assets/Scripts/StateManager.cs
+  artifactKey: Guid(856575ef55fd4464c8e1dd3792bf247e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/StateManager.cs using Guid(856575ef55fd4464c8e1dd3792bf247e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e650049adf6507bbbe93602ed5b19591') in 0.008514 seconds
+  Import took 0.015889 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.142551 seconds.
+  path: Assets/Scripts/Player2Piece.cs
+  artifactKey: Guid(13e9a2a3ccfa045438fe28f9169d4a9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player2Piece.cs using Guid(13e9a2a3ccfa045438fe28f9169d4a9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57419455b817543d8e7a8d4948edb39d') in 0.007091 seconds
+  Import took 0.011577 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002026 seconds.
+  path: Assets/Scripts/Player2Piece.cs
+  artifactKey: Guid(13e9a2a3ccfa045438fe28f9169d4a9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player2Piece.cs using Guid(13e9a2a3ccfa045438fe28f9169d4a9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57419455b817543d8e7a8d4948edb39d') in 0.007611 seconds
+  Import took 0.013713 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.871099 seconds.
+  path: Assets/Scripts/Player1Piece.cs
+  artifactKey: Guid(816f57e6d29237a4b8b4732d8a1df3a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player1Piece.cs using Guid(816f57e6d29237a4b8b4732d8a1df3a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '263c3ab2ba8b4f55a833f9ef0c7470c4') in 0.006568 seconds
+  Import took 0.018960 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005900 seconds.
+  path: Assets/Scripts/Player1Piece.cs
+  artifactKey: Guid(816f57e6d29237a4b8b4732d8a1df3a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player1Piece.cs using Guid(816f57e6d29237a4b8b4732d8a1df3a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '263c3ab2ba8b4f55a833f9ef0c7470c4') in 0.005681 seconds
+  Import took 0.008949 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 33.909023 seconds.
+  path: Assets/Textures/DiceFace1.png
+  artifactKey: Guid(5698984c4ce379d4581436fff3e01e8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/DiceFace1.png using Guid(5698984c4ce379d4581436fff3e01e8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '363030d4e02f11d7f4bc3351056304e0') in 0.187291 seconds
+  Import took 0.190114 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000294 seconds.
+  path: Assets/Textures/DiceFace2.png
+  artifactKey: Guid(7aa49c2107e2c0846beefb5b3e964889) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/DiceFace2.png using Guid(7aa49c2107e2c0846beefb5b3e964889) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e50042326f31332a8e6097fb09577bd5') in 0.017992 seconds
+  Import took 0.021320 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000353 seconds.
+  path: Assets/Textures/DiceFace3.png
+  artifactKey: Guid(d053cbccd39b23741a88ad43fa4d9dc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/DiceFace3.png using Guid(d053cbccd39b23741a88ad43fa4d9dc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65259d72058255a955fff480675c4de8') in 0.029492 seconds
+  Import took 0.032293 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/Textures/DiceFace5.png
+  artifactKey: Guid(13823ff26a52b9a4e8675a79df1f7fd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/DiceFace5.png using Guid(13823ff26a52b9a4e8675a79df1f7fd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bcf5ab6a222f25c062649fae0d5cb1a') in 0.019502 seconds
+  Import took 0.021960 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/Textures/DiceFace6.png
+  artifactKey: Guid(eea8b686014b2d94393e6b40590c2608) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/DiceFace6.png using Guid(eea8b686014b2d94393e6b40590c2608) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05aafc37adb51f8182bd9b3641e69c17') in 0.013669 seconds
+  Import took 0.016015 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000256 seconds.
+  path: Assets/Textures/DiceFace1.png
+  artifactKey: Guid(5698984c4ce379d4581436fff3e01e8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/DiceFace1.png using Guid(5698984c4ce379d4581436fff3e01e8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '363030d4e02f11d7f4bc3351056304e0') in 0.012257 seconds
+  Import took 0.014381 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000331 seconds.
+  path: Assets/Textures/DiceFace4.png
+  artifactKey: Guid(3ba4084f27004c14abff8cf63e8764f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/DiceFace4.png using Guid(3ba4084f27004c14abff8cf63e8764f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '424ead82558e43d62764fc0cb3ff1ba9') in 0.017635 seconds
+  Import took 0.020454 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.295380 seconds.
+  path: Assets/Scripts/DiceRoller.cs
+  artifactKey: Guid(cce8f0c24cbfb914388e7cbae9625d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DiceRoller.cs using Guid(cce8f0c24cbfb914388e7cbae9625d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5cd63ceb9e778d4a20675e8236bc78e') in 0.004721 seconds
+  Import took 0.007768 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000761 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.865 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1112 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 60.0 MB.
+System memory in use after: 60.1 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1573.
+Total: 1.687200 ms (FindLiveObjects: 0.136800 ms CreateObjectMapping: 0.032600 ms MarkObjects: 1.503800 ms  DeleteObjects: 0.013200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.633275 seconds.
+  path: Assets/Scripts/DiceRoller.cs
+  artifactKey: Guid(cce8f0c24cbfb914388e7cbae9625d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DiceRoller.cs using Guid(cce8f0c24cbfb914388e7cbae9625d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6f47825455e1729ec093415ef1af5b3') in 0.006010 seconds
+  Import took 0.008372 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000802 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.31 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.853 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.31 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1112 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 60.0 MB.
+System memory in use after: 60.1 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1576.
+Total: 1.658000 ms (FindLiveObjects: 0.151600 ms CreateObjectMapping: 0.047400 ms MarkObjects: 1.444500 ms  DeleteObjects: 0.013100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.144700 seconds.
+  path: Assets/Scripts/DiceRoller.cs
+  artifactKey: Guid(cce8f0c24cbfb914388e7cbae9625d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DiceRoller.cs using Guid(cce8f0c24cbfb914388e7cbae9625d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1980a69aa6a6d101450aaacc956b286') in 0.005796 seconds
+  Import took 0.007718 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.673591 seconds.
+  path: Assets/Scripts/DiceRoller.cs
+  artifactKey: Guid(cce8f0c24cbfb914388e7cbae9625d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DiceRoller.cs using Guid(cce8f0c24cbfb914388e7cbae9625d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1980a69aa6a6d101450aaacc956b286') in 0.003593 seconds
+  Import took 0.005720 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000803 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.865 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.31 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1112 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 60.0 MB.
+System memory in use after: 60.1 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1579.
+Total: 1.736200 ms (FindLiveObjects: 0.134400 ms CreateObjectMapping: 0.033900 ms MarkObjects: 1.553400 ms  DeleteObjects: 0.013200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.595619 seconds.
+  path: Assets/Scripts/DiceRoller.cs
+  artifactKey: Guid(cce8f0c24cbfb914388e7cbae9625d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DiceRoller.cs using Guid(cce8f0c24cbfb914388e7cbae9625d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '208456a011e96053dfba7e32e6e25cba') in 0.005146 seconds
+  Import took 0.007585 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.683986 seconds.
+  path: Assets/Scripts/DiceRoller.cs
+  artifactKey: Guid(cce8f0c24cbfb914388e7cbae9625d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DiceRoller.cs using Guid(cce8f0c24cbfb914388e7cbae9625d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '208456a011e96053dfba7e32e6e25cba') in 0.003812 seconds
+  Import took 0.005826 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001166 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.882 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1112 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 60.0 MB.
+System memory in use after: 60.1 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1582.
+Total: 1.705500 ms (FindLiveObjects: 0.205000 ms CreateObjectMapping: 0.043900 ms MarkObjects: 1.428900 ms  DeleteObjects: 0.025400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 59.246085 seconds.
+  path: Assets/Scripts/DiceRoller.cs
+  artifactKey: Guid(cce8f0c24cbfb914388e7cbae9625d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DiceRoller.cs using Guid(cce8f0c24cbfb914388e7cbae9625d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '700c0e642f3d8a7405a79f08d2c80c55') in 0.006620 seconds
+  Import took 0.008927 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001226 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.946 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1112 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 60.0 MB.
+System memory in use after: 60.1 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1585.
+Total: 2.164500 ms (FindLiveObjects: 0.171200 ms CreateObjectMapping: 0.034000 ms MarkObjects: 1.941700 ms  DeleteObjects: 0.016600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.203406 seconds.
+  path: Assets/Scripts/DiceRoller.cs
+  artifactKey: Guid(cce8f0c24cbfb914388e7cbae9625d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DiceRoller.cs using Guid(cce8f0c24cbfb914388e7cbae9625d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be65b09e9586858353669e52b1ba7f05') in 0.006068 seconds
+  Import took 0.016223 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.618654 seconds.
+  path: Assets/Scripts/DiceRoller.cs
+  artifactKey: Guid(cce8f0c24cbfb914388e7cbae9625d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DiceRoller.cs using Guid(cce8f0c24cbfb914388e7cbae9625d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be65b09e9586858353669e52b1ba7f05') in 0.004656 seconds
+  Import took 0.007051 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000797 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.951 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1112 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 60.0 MB.
+System memory in use after: 60.1 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1588.
+Total: 1.802100 ms (FindLiveObjects: 0.133300 ms CreateObjectMapping: 0.036500 ms MarkObjects: 1.617100 ms  DeleteObjects: 0.014300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.579238 seconds.
+  path: Assets/Scripts/DiceRoller.cs
+  artifactKey: Guid(cce8f0c24cbfb914388e7cbae9625d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DiceRoller.cs using Guid(cce8f0c24cbfb914388e7cbae9625d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e97722db80835a4f925efd2e146ebf8') in 0.005981 seconds
+  Import took 0.017462 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.606117 seconds.
+  path: Assets/Scripts/DiceRoller.cs
+  artifactKey: Guid(cce8f0c24cbfb914388e7cbae9625d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DiceRoller.cs using Guid(cce8f0c24cbfb914388e7cbae9625d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e97722db80835a4f925efd2e146ebf8') in 0.004234 seconds
+  Import took 0.006424 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000761 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.942 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.33 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1112 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 60.0 MB.
+System memory in use after: 60.1 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1591.
+Total: 1.981900 ms (FindLiveObjects: 0.257500 ms CreateObjectMapping: 0.037700 ms MarkObjects: 1.671900 ms  DeleteObjects: 0.013500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.036521 seconds.
+  path: Assets/Scripts/DiceRoller.cs
+  artifactKey: Guid(cce8f0c24cbfb914388e7cbae9625d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DiceRoller.cs using Guid(cce8f0c24cbfb914388e7cbae9625d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf9de97d659907c59127f657c68952cb') in 0.005875 seconds
+  Import took 0.016931 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.639821 seconds.
+  path: Assets/Scripts/DiceRoller.cs
+  artifactKey: Guid(cce8f0c24cbfb914388e7cbae9625d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DiceRoller.cs using Guid(cce8f0c24cbfb914388e7cbae9625d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf9de97d659907c59127f657c68952cb') in 0.004058 seconds
+  Import took 0.006495 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000855 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.988 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1112 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 60.0 MB.
+System memory in use after: 60.1 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1594.
+Total: 1.623200 ms (FindLiveObjects: 0.140600 ms CreateObjectMapping: 0.040300 ms MarkObjects: 1.424700 ms  DeleteObjects: 0.016600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.341128 seconds.
+  path: Assets/Scripts/DiceRoller.cs
+  artifactKey: Guid(cce8f0c24cbfb914388e7cbae9625d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DiceRoller.cs using Guid(cce8f0c24cbfb914388e7cbae9625d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adf7f85183bc8cf882dccfe6f81eb6d8') in 0.006012 seconds
+  Import took 0.008053 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.625110 seconds.
+  path: Assets/Scripts/DiceRoller.cs
+  artifactKey: Guid(cce8f0c24cbfb914388e7cbae9625d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DiceRoller.cs using Guid(cce8f0c24cbfb914388e7cbae9625d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adf7f85183bc8cf882dccfe6f81eb6d8') in 0.003836 seconds
+  Import took 0.006012 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000796 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.914 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1112 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 60.0 MB.
+System memory in use after: 60.1 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1597.
+Total: 2.168300 ms (FindLiveObjects: 0.268000 ms CreateObjectMapping: 0.076900 ms MarkObjects: 1.805500 ms  DeleteObjects: 0.016500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.867968 seconds.
+  path: Assets/Scripts/DiceRoller.cs
+  artifactKey: Guid(cce8f0c24cbfb914388e7cbae9625d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DiceRoller.cs using Guid(cce8f0c24cbfb914388e7cbae9625d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a8187e26d635b374e2d5b7b8971a67e') in 0.006670 seconds
+  Import took 0.016290 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.579238 seconds.
+  path: Assets/Scripts/DiceRoller.cs
+  artifactKey: Guid(cce8f0c24cbfb914388e7cbae9625d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DiceRoller.cs using Guid(cce8f0c24cbfb914388e7cbae9625d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a8187e26d635b374e2d5b7b8971a67e') in 0.003936 seconds
+  Import took 0.006872 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001129 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.899 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1112 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 60.0 MB.
+System memory in use after: 60.1 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1600.
+Total: 1.738500 ms (FindLiveObjects: 0.161200 ms CreateObjectMapping: 0.047600 ms MarkObjects: 1.513800 ms  DeleteObjects: 0.014500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.908155 seconds.
+  path: Assets/Scripts/DiceRoller.cs
+  artifactKey: Guid(cce8f0c24cbfb914388e7cbae9625d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DiceRoller.cs using Guid(cce8f0c24cbfb914388e7cbae9625d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fecd03f37c19f7f78f1ff8857547fd18') in 0.005985 seconds
+  Import took 0.017265 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.637459 seconds.
+  path: Assets/Scripts/DiceRoller.cs
+  artifactKey: Guid(cce8f0c24cbfb914388e7cbae9625d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DiceRoller.cs using Guid(cce8f0c24cbfb914388e7cbae9625d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fecd03f37c19f7f78f1ff8857547fd18') in 0.003736 seconds
+  Import took 0.005994 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000811 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.945 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1112 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 60.0 MB.
+System memory in use after: 60.1 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1603.
+Total: 2.068300 ms (FindLiveObjects: 0.159400 ms CreateObjectMapping: 0.041400 ms MarkObjects: 1.827100 ms  DeleteObjects: 0.039100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003338 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.31 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.216 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.62 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1112 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 60.0 MB.
+System memory in use after: 60.1 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1606.
+Total: 5.128700 ms (FindLiveObjects: 0.314300 ms CreateObjectMapping: 0.129400 ms MarkObjects: 4.639200 ms  DeleteObjects: 0.041200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000865 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.541 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.64 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1112 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 60.0 MB.
+System memory in use after: 60.1 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1609.
+Total: 3.489000 ms (FindLiveObjects: 0.340000 ms CreateObjectMapping: 0.115300 ms MarkObjects: 3.010300 ms  DeleteObjects: 0.021300 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
