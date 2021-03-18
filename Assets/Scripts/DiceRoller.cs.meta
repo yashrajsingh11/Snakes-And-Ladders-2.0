@@ -4,8 +4,8 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - DiceFace1: {fileID: 21300000, guid: 5698984c4ce379d4581436fff3e01e8b, type: 3}
-  - DiceFace2: {fileID: 21300000, guid: 7aa49c2107e2c0846beefb5b3e964889, type: 3}
+  - DiceFace1: {fileID: 21300000, guid: 246e35ce629d83445a787cbe195fb1fe, type: 3}
+  - DiceFace2: {fileID: 21300000, guid: 8af1c865bb19d4744b646b7c99cb2df8, type: 3}
   - DiceFace3: {fileID: 21300000, guid: d053cbccd39b23741a88ad43fa4d9dc7, type: 3}
   - DiceFace4: {fileID: 21300000, guid: 3ba4084f27004c14abff8cf63e8764f9, type: 3}
   - DiceFace5: {fileID: 21300000, guid: 13823ff26a52b9a4e8675a79df1f7fd4, type: 3}
