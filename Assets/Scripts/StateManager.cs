@@ -13,6 +13,7 @@ public class StateManager : MonoBehaviour {
         
     }
 
+    public bool isGameOver = false;
     public int NumberOfPlayers = 2;
     public int CurrentPlayerId = 0;
     public int diceValue;
@@ -23,6 +24,7 @@ public class StateManager : MonoBehaviour {
     public int PlayerOneSnakeCharmer = 0;
     public int PlayerTwoAxe = 0;
     public int PlayerTwoSnakeCharmer = 0;
+    public bool hasUsedSpecialItem = false;
 
     public void NewTurn() {
     	IsDoneRolling = false;

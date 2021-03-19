@@ -4,12 +4,12 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - DiceFace1: {fileID: 21300000, guid: 246e35ce629d83445a787cbe195fb1fe, type: 3}
-  - DiceFace2: {fileID: 21300000, guid: 8af1c865bb19d4744b646b7c99cb2df8, type: 3}
-  - DiceFace3: {fileID: 21300000, guid: d053cbccd39b23741a88ad43fa4d9dc7, type: 3}
-  - DiceFace4: {fileID: 21300000, guid: 3ba4084f27004c14abff8cf63e8764f9, type: 3}
-  - DiceFace5: {fileID: 21300000, guid: 13823ff26a52b9a4e8675a79df1f7fd4, type: 3}
-  - DiceFace6: {fileID: 21300000, guid: eea8b686014b2d94393e6b40590c2608, type: 3}
+  - DiceFace1: {fileID: 21300000, guid: 2fb825bd78bee0c448d1fd985d14b3d0, type: 3}
+  - DiceFace2: {fileID: 21300000, guid: ea863c7c1b013f24696baa9cd6d54971, type: 3}
+  - DiceFace3: {fileID: 21300000, guid: 92b3069580c8ce8448fec8ddb75e200e, type: 3}
+  - DiceFace4: {fileID: 21300000, guid: 36e8198bc0e65ea4e8d253b6ffde3315, type: 3}
+  - DiceFace5: {fileID: 21300000, guid: 3285c1378a10a464db64f146248299d7, type: 3}
+  - DiceFace6: {fileID: 21300000, guid: 317438df5585ea54397b530b177e7fb2, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

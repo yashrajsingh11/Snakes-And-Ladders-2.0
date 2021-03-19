@@ -1,16 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player1Piece : MonoBehaviour {
     // Start is called before the first frame update
     void Start() {
         theStateManager = GameObject.FindObjectOfType<StateManager>();
+        theWinnerText = GameObject.FindObjectOfType<WinnerText>();
+        thePromptText = GameObject.FindObjectOfType<PromptText>();
     }
 
     public Tile StartingTile;
     Tile currentTile;
     StateManager theStateManager;
+    WinnerText theWinnerText;
+    PromptText thePromptText;
 
     // Update is called once per frame
     void Update() {
@@ -32,7 +37,7 @@ public class Player1Piece : MonoBehaviour {
                 } else {
                 
                     if(finalTile.NextTiles == null || finalTile.NextTiles.Length == 0) {
-                
+                        theStateManager.isGameOver = true;
                         Debug.Log("Player 1 Won!!");
                         Destroy(gameObject);
                         return;
@@ -57,19 +62,27 @@ public class Player1Piece : MonoBehaviour {
                 if(finalTile.NextTiles[1] != null) {
                     if(theStateManager.PlayerTwoAxe != 0) {
                         theStateManager.PlayerTwoAxe = theStateManager.PlayerTwoAxe - 1;
+                        theStateManager.hasUsedSpecialItem = true;
+                        thePromptText.promptText("Player 2 used Axe");
                         Debug.Log("Player 2 used Axe");
                     } else {
                         finalTile = finalTile.NextTiles[1];
                         this.transform.position = finalTile.transform.position;
+                        theStateManager.hasUsedSpecialItem = true;
+                        thePromptText.promptText("Player 2 didnt had axe so you moved up");
                         Debug.Log("Player 2 didnt had axe so you moved up");
                     }
                 } else if(finalTile.NextTiles[2] != null) {
                     if(theStateManager.PlayerOneSnakeCharmer != 0) {
                          theStateManager.PlayerOneSnakeCharmer = theStateManager.PlayerOneSnakeCharmer - 1;
+                        theStateManager.hasUsedSpecialItem = true;
+                        thePromptText.promptText("You(player1) got saved by snakecharmer");
                          Debug.Log("You(player1) got saved by snakecharmer");
                     } else {
                         finalTile = finalTile.NextTiles[2];
                         this.transform.position = finalTile.transform.position;
+                        theStateManager.hasUsedSpecialItem = true;
+                        thePromptText.promptText("No snakecharmer sorry you(player1) have to go down");
                         Debug.Log("No snakecharmer sorry you(player1) have to go down");
                     }
                 }
