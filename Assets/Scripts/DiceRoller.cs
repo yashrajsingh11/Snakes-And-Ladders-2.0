@@ -11,12 +11,14 @@ public class DiceRoller : MonoBehaviour {
         theLuckyTextDisplay = GameObject.FindObjectOfType<LuckyTextDisplay>();
         thePlayerOneDetails = GameObject.FindObjectOfType<Player1Details>();
         thePlayerTwoDetails = GameObject.FindObjectOfType<Player2Details>();
+        theCurrentPlayerDisplay = GameObject.FindObjectOfType<CurrentPlayerDisplay>();
     }
 
     // Update is called once per frame
     void Update() {
         thePlayerOneDetails.PlayerOneDetails();
         thePlayerTwoDetails.PlayerTwoDetails();
+        theCurrentPlayerDisplay.CurrentPlayerText();
     }
 
     StateManager theStateManager;
@@ -24,6 +26,7 @@ public class DiceRoller : MonoBehaviour {
     LuckyTextDisplay theLuckyTextDisplay;
     Player1Details thePlayerOneDetails;
     Player2Details thePlayerTwoDetails;
+    CurrentPlayerDisplay theCurrentPlayerDisplay;
     public Sprite DiceFace1;
     public Sprite DiceFace2;
     public Sprite DiceFace3;
