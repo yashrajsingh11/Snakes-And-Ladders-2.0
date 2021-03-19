@@ -14,7 +14,7 @@ public class Player1Piece : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        if(theStateManager.IsDoneRolling == false) {
+        if(theStateManager.IsDoneRolling == false || theStateManager.HasToChoose == true) {
             return;
         }
         
@@ -54,10 +54,26 @@ public class Player1Piece : MonoBehaviour {
             this.transform.position = finalTile.transform.position; 
 
             if(finalTile.NextTiles.Length > 1) {
-                finalTile = finalTile.NextTiles[1];
+                if(finalTile.NextTiles[1] != null) {
+                    if(theStateManager.PlayerTwoAxe != 0) {
+                        theStateManager.PlayerTwoAxe = theStateManager.PlayerTwoAxe - 1;
+                        Debug.Log("Player 2 used Axe");
+                    } else {
+                        finalTile = finalTile.NextTiles[1];
+                        this.transform.position = finalTile.transform.position;
+                        Debug.Log("Player 2 didnt had axe so you moved up");
+                    }
+                } else if(finalTile.NextTiles[2] != null) {
+                    if(theStateManager.PlayerOneSnakeCharmer != 0) {
+                         theStateManager.PlayerOneSnakeCharmer = theStateManager.PlayerOneSnakeCharmer - 1;
+                         Debug.Log("You(player1) got saved by snakecharmer");
+                    } else {
+                        finalTile = finalTile.NextTiles[2];
+                        this.transform.position = finalTile.transform.position;
+                        Debug.Log("No snakecharmer sorry you(player1) have to go down");
+                    }
+                }
             }
-            //yield WaitForSeconds(2);
-            this.transform.position = finalTile.transform.position; 
 
             currentTile = finalTile;
             theStateManager.NewTurn();

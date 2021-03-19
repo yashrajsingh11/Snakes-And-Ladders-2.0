@@ -17,6 +17,12 @@ public class StateManager : MonoBehaviour {
     public int CurrentPlayerId = 0;
     public int diceValue;
     public bool IsDoneRolling = false;
+    public bool IsLucky = false;
+    public bool HasToChoose = false;
+    public int PlayerOneAxe = 0;
+    public int PlayerOneSnakeCharmer = 0;
+    public int PlayerTwoAxe = 0;
+    public int PlayerTwoSnakeCharmer = 0;
 
     public void NewTurn() {
     	IsDoneRolling = false;

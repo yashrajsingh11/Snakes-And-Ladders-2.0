@@ -7,14 +7,23 @@ public class DiceRoller : MonoBehaviour {
     // Start is called before the first frame update
     void Start() {
     	theStateManager = GameObject.FindObjectOfType<StateManager>();
+        theLuckyMenu = GameObject.FindObjectOfType<LuckyMenu>();
+        theLuckyTextDisplay = GameObject.FindObjectOfType<LuckyTextDisplay>();
+        thePlayerOneDetails = GameObject.FindObjectOfType<Player1Details>();
+        thePlayerTwoDetails = GameObject.FindObjectOfType<Player2Details>();
     }
 
     // Update is called once per frame
     void Update() {
-        
+        thePlayerOneDetails.PlayerOneDetails();
+        thePlayerTwoDetails.PlayerTwoDetails();
     }
 
     StateManager theStateManager;
+    LuckyMenu theLuckyMenu;
+    LuckyTextDisplay theLuckyTextDisplay;
+    Player1Details thePlayerOneDetails;
+    Player2Details thePlayerTwoDetails;
     public Sprite DiceFace1;
     public Sprite DiceFace2;
     public Sprite DiceFace3;
@@ -29,6 +38,14 @@ public class DiceRoller : MonoBehaviour {
     	}
 
     	theStateManager.diceValue = Random.Range(1, 7);
+        
+        int check = Random.Range(1, 12);
+        if(check == 6) {
+            theStateManager.IsLucky = true;
+            theLuckyMenu.RunLuckyMenu();
+            theLuckyTextDisplay.LuckyDisplay();
+        }
+
 
     	if(theStateManager.diceValue == 1) {		
     		this.GetComponent<Image>().sprite = DiceFace1;
