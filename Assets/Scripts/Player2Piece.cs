@@ -69,14 +69,14 @@ public class Player2Piece : MonoBehaviour {
                         this.transform.position = finalTile.transform.position;
                         theStateManager.hasUsedSpecialItem = true;
                         thePromptText.promptText("Player 1 didnt had axe so you moved up");
-                        Debug.Log("Player 1 didnt had axe so you moved up");
+                        Debug.Log("Player 1 didn't had axe so you moved up");
                     }
                 } else if(finalTile.NextTiles[2] != null) {
                     if(theStateManager.PlayerTwoSnakeCharmer != 0) {
                          theStateManager.PlayerTwoSnakeCharmer = theStateManager.PlayerTwoSnakeCharmer - 1;
                         theStateManager.hasUsedSpecialItem = true;
                         thePromptText.promptText("You(player2) got saved by snakecharmer");
-                        Debug.Log("You(player2) got saved by snakecharmer");
+                        Debug.Log("Player 2 got saved by snakecharmer");
                     } else {
                         finalTile = finalTile.NextTiles[2];
                         this.transform.position = finalTile.transform.position;
