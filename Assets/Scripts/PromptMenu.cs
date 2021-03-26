@@ -8,6 +8,7 @@ public class PromptMenu : MonoBehaviour
     void Start()
     {
         theStateManager = GameObject.FindObjectOfType<StateManager>();
+        
     }
 
     public GameObject promptMenu;
@@ -17,20 +18,24 @@ public class PromptMenu : MonoBehaviour
     {
         if(theStateManager.hasUsedSpecialItem == false)
         {
+            
             promptMenu.SetActive(false);   
             Time.timeScale = 1f;
         }
         else
         {
             promptMenu.SetActive(true);
+            Invoke("ok", 1);
         }
     }
+
+
 
     public void ok()
     {
         theStateManager.hasUsedSpecialItem = false;        
         //promptMenu.SetActive(false);
-        Debug.Log(theStateManager.hasUsedSpecialItem);
+        //Debug.Log(theStateManager.hasUsedSpecialItem);
         Time.timeScale = 1f;
     }
 
