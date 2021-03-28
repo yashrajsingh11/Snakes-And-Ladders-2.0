@@ -25,7 +25,7 @@ public class PromptMenu : MonoBehaviour
         else
         {
             promptMenu.SetActive(true);
-            Invoke("ok", 1);
+            //Invoke("ok", 2);
         }
     }
 
