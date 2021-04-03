@@ -767,8 +767,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myFx: {fileID: 972943001}
-  hoverFx: {fileID: 8300000, guid: cd09576a6a83cdf4e89c30d4b3982987, type: 3}
+  hoverFx: {fileID: 8300000, guid: 826f386f3ce3b4241b9ce20d266bf60b, type: 3}
   clickFx: {fileID: 8300000, guid: c86e7ef89c2c09d41940adcd0d6ef15a, type: 3}
+  moveFx: {fileID: 0}
 --- !u!82 &972943001
 AudioSource:
   m_ObjectHideFlags: 0
@@ -781,7 +782,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.75
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1298,8 +1299,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myFx: {fileID: 1489659760}
-  hoverFx: {fileID: 8300000, guid: cd09576a6a83cdf4e89c30d4b3982987, type: 3}
+  hoverFx: {fileID: 8300000, guid: 826f386f3ce3b4241b9ce20d266bf60b, type: 3}
   clickFx: {fileID: 8300000, guid: c86e7ef89c2c09d41940adcd0d6ef15a, type: 3}
+  moveFx: {fileID: 0}
 --- !u!82 &1489659760
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1312,7 +1314,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.75
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1972,8 +1974,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myFx: {fileID: 1933387438}
-  hoverFx: {fileID: 8300000, guid: cd09576a6a83cdf4e89c30d4b3982987, type: 3}
+  hoverFx: {fileID: 8300000, guid: 826f386f3ce3b4241b9ce20d266bf60b, type: 3}
   clickFx: {fileID: 8300000, guid: c86e7ef89c2c09d41940adcd0d6ef15a, type: 3}
+  moveFx: {fileID: 0}
 --- !u!82 &1933387438
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1986,7 +1989,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.75
   m_Pitch: 1
   Loop: 0
   Mute: 0

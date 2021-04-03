@@ -1027,7 +1027,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.75
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1124,8 +1124,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myFx: {fileID: 132007408}
-  hoverFx: {fileID: 8300000, guid: cd09576a6a83cdf4e89c30d4b3982987, type: 3}
+  hoverFx: {fileID: 8300000, guid: 826f386f3ce3b4241b9ce20d266bf60b, type: 3}
   clickFx: {fileID: 8300000, guid: c86e7ef89c2c09d41940adcd0d6ef15a, type: 3}
+  moveFx: {fileID: 0}
 --- !u!114 &132007410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1352,8 +1353,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myFx: {fileID: 142910960}
-  hoverFx: {fileID: 8300000, guid: cd09576a6a83cdf4e89c30d4b3982987, type: 3}
+  hoverFx: {fileID: 8300000, guid: 826f386f3ce3b4241b9ce20d266bf60b, type: 3}
   clickFx: {fileID: 8300000, guid: c86e7ef89c2c09d41940adcd0d6ef15a, type: 3}
+  moveFx: {fileID: 0}
 --- !u!82 &142910960
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1366,7 +1368,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.75
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2940,8 +2942,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myFx: {fileID: 275507485}
-  hoverFx: {fileID: 8300000, guid: cd09576a6a83cdf4e89c30d4b3982987, type: 3}
-  clickFx: {fileID: 8300000, guid: c86e7ef89c2c09d41940adcd0d6ef15a, type: 3}
+  hoverFx: {fileID: 8300000, guid: 826f386f3ce3b4241b9ce20d266bf60b, type: 3}
+  clickFx: {fileID: 0}
+  moveFx: {fileID: 0}
 --- !u!82 &275507485
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2954,7 +2957,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3878,6 +3881,7 @@ GameObject:
   - component: {fileID: 384231400}
   - component: {fileID: 384231402}
   - component: {fileID: 384231401}
+  - component: {fileID: 384231403}
   m_Layer: 0
   m_Name: Player2_piece
   m_TagString: Untagged
@@ -3929,6 +3933,104 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingTile: {fileID: 853809273}
+  myFx: {fileID: 384231403}
+  moveFx: {fileID: 8300000, guid: 90a5bbb1ce81f06479a0afc40f16b58d, type: 3}
+--- !u!82 &384231403
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 384231399}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.5
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &391066480
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4311,8 +4413,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myFx: {fileID: 406360563}
-  hoverFx: {fileID: 8300000, guid: cd09576a6a83cdf4e89c30d4b3982987, type: 3}
-  clickFx: {fileID: 8300000, guid: c86e7ef89c2c09d41940adcd0d6ef15a, type: 3}
+  hoverFx: {fileID: 8300000, guid: 826f386f3ce3b4241b9ce20d266bf60b, type: 3}
+  clickFx: {fileID: 0}
+  moveFx: {fileID: 0}
 --- !u!82 &406360563
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4325,7 +4428,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4963,8 +5066,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myFx: {fileID: 445661420}
-  hoverFx: {fileID: 8300000, guid: cd09576a6a83cdf4e89c30d4b3982987, type: 3}
-  clickFx: {fileID: 8300000, guid: c86e7ef89c2c09d41940adcd0d6ef15a, type: 3}
+  hoverFx: {fileID: 8300000, guid: 826f386f3ce3b4241b9ce20d266bf60b, type: 3}
+  clickFx: {fileID: 0}
+  moveFx: {fileID: 0}
 --- !u!82 &445661420
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4977,7 +5081,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -10836,6 +10940,7 @@ GameObject:
   - component: {fileID: 1258985550}
   - component: {fileID: 1258985552}
   - component: {fileID: 1258985551}
+  - component: {fileID: 1258985553}
   m_Layer: 0
   m_Name: Player1_piece
   m_TagString: Untagged
@@ -10887,6 +10992,104 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingTile: {fileID: 853809273}
+  myFx: {fileID: 1258985553}
+  moveFx: {fileID: 8300000, guid: e70cda8f3df116a48b59cf6513af2248, type: 3}
+--- !u!82 &1258985553
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258985549}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.5
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &1259720348 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 853809273, guid: 06a84bde0baa975489e22731a34db022,
@@ -11684,8 +11887,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myFx: {fileID: 1348783950}
-  hoverFx: {fileID: 8300000, guid: cd09576a6a83cdf4e89c30d4b3982987, type: 3}
+  hoverFx: {fileID: 8300000, guid: 826f386f3ce3b4241b9ce20d266bf60b, type: 3}
   clickFx: {fileID: 8300000, guid: c86e7ef89c2c09d41940adcd0d6ef15a, type: 3}
+  moveFx: {fileID: 0}
 --- !u!82 &1348783950
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11698,7 +11902,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -12631,8 +12835,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myFx: {fileID: 1477668141}
-  hoverFx: {fileID: 8300000, guid: cd09576a6a83cdf4e89c30d4b3982987, type: 3}
+  hoverFx: {fileID: 8300000, guid: 826f386f3ce3b4241b9ce20d266bf60b, type: 3}
   clickFx: {fileID: 8300000, guid: c86e7ef89c2c09d41940adcd0d6ef15a, type: 3}
+  moveFx: {fileID: 0}
 --- !u!82 &1477668141
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12645,7 +12850,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -13327,8 +13532,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myFx: {fileID: 1568683733}
-  hoverFx: {fileID: 8300000, guid: cd09576a6a83cdf4e89c30d4b3982987, type: 3}
+  hoverFx: {fileID: 8300000, guid: 826f386f3ce3b4241b9ce20d266bf60b, type: 3}
   clickFx: {fileID: 8300000, guid: c86e7ef89c2c09d41940adcd0d6ef15a, type: 3}
+  moveFx: {fileID: 0}
 --- !u!82 &1568683733
 AudioSource:
   m_ObjectHideFlags: 0
@@ -13341,7 +13547,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -14720,8 +14926,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myFx: {fileID: 1781600733}
-  hoverFx: {fileID: 8300000, guid: cd09576a6a83cdf4e89c30d4b3982987, type: 3}
+  hoverFx: {fileID: 8300000, guid: 826f386f3ce3b4241b9ce20d266bf60b, type: 3}
   clickFx: {fileID: 8300000, guid: c86e7ef89c2c09d41940adcd0d6ef15a, type: 3}
+  moveFx: {fileID: 0}
 --- !u!82 &1781600733
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14734,7 +14941,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.75
   m_Pitch: 1
   Loop: 0
   Mute: 0

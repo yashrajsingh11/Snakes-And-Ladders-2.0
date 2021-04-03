@@ -12,6 +12,8 @@ public class Player2Piece : MonoBehaviour {
     }
 
     public Tile StartingTile;
+    public AudioSource myFx;
+    public AudioClip moveFx;
     Tile currentTile;
     StateManager theStateManager;
     WinnerText theWinnerText;
@@ -55,7 +57,8 @@ public class Player2Piece : MonoBehaviour {
             	return;
         	}
         
-        	this.transform.position = finalTile.transform.position; 
+        	this.transform.position = finalTile.transform.position;
+        	myFx.PlayOneShot(moveFx); 
 
             if(finalTile.NextTiles.Length > 1) {
                 if(finalTile.NextTiles[1] != null) {
@@ -67,6 +70,7 @@ public class Player2Piece : MonoBehaviour {
                     } else {
                         finalTile = finalTile.NextTiles[1];
                         this.transform.position = finalTile.transform.position;
+                        myFx.PlayOneShot(moveFx);
                         theStateManager.hasUsedSpecialItem = true;
                         thePromptText.promptText("Player 1 didnt had axe so you moved up");
                         Debug.Log("Player 1 didn't had axe so you moved up");
@@ -80,6 +84,7 @@ public class Player2Piece : MonoBehaviour {
                     } else {
                         finalTile = finalTile.NextTiles[2];
                         this.transform.position = finalTile.transform.position;
+                        myFx.PlayOneShot(moveFx);
                         theStateManager.hasUsedSpecialItem = true;
                         thePromptText.promptText("No snakecharmer sorry you(player2) have to go down");
                         Debug.Log("No snakecharmer sorry you(player2) have to go down");
