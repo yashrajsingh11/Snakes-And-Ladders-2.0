@@ -63,31 +63,83 @@ public class Player2Piece : MonoBehaviour {
             if(finalTile.NextTiles.Length > 1) {
                 if(finalTile.NextTiles[1] != null) {
                     if(theStateManager.PlayerOneAxe != 0) {
-                        theStateManager.PlayerOneAxe = theStateManager.PlayerOneAxe - 1;
-                        theStateManager.hasUsedSpecialItem = true;
-                        thePromptText.promptText("Player 1 used Axe");
-                        Debug.Log("Player 1 used Axe");
+                    	while(theStateManager.PlayerTwoAxe != 0 && theStateManager.PlayerOneAxe != 0) {
+                        	theStateManager.PlayerOneAxe = theStateManager.PlayerOneAxe - 1;
+                        	theStateManager.hasUsedSpecialItem = true;
+                        	thePromptText.promptText("Player 1 used Axe");
+                        	Debug.Log("Player 1 used Axe");
+                        	theStateManager.PlayerTwoAxe = theStateManager.PlayerTwoAxe - 1;
+                            theStateManager.hasUsedSpecialItem = true;
+                            thePromptText.promptText("Player 2 used Axe as a counter");
+                            Debug.Log("Player 2 used Axe as a counter");
+                        }
+                        if(theStateManager.PlayerOneAxe == 0 && theStateManager.PlayerTwoAxe != 0) {
+                            finalTile = finalTile.NextTiles[1];
+                            this.transform.position = finalTile.transform.position;
+                            myFx.PlayOneShot(moveFx);
+                            theStateManager.hasUsedSpecialItem = true;
+                            thePromptText.promptText("Player 1 didnt had axe so Player 2 moved up");
+                            Debug.Log("Player 1 didnt had axe so Player 2 moved up");
+                        } else if(theStateManager.PlayerOneAxe != 0 && theStateManager.PlayerTwoAxe == 0) {
+                            theStateManager.PlayerOneAxe = theStateManager.PlayerOneAxe - 1;
+                            theStateManager.hasUsedSpecialItem = true;
+                            thePromptText.promptText("Player 1 used the final Axe");
+                            Debug.Log("Player 1 used the final Axe");
+                        } else if(theStateManager.PlayerOneAxe == 0 && theStateManager.PlayerTwoAxe == 0)  {
+                            finalTile = finalTile.NextTiles[1];
+                            this.transform.position = finalTile.transform.position;
+                            myFx.PlayOneShot(moveFx);
+                            theStateManager.hasUsedSpecialItem = true;
+                            thePromptText.promptText("Player 1 didnt had axe so Player 2 moved up");
+                            Debug.Log("Player 1 didnt had axe so Player 2 moved up");
+                        }
                     } else {
                         finalTile = finalTile.NextTiles[1];
                         this.transform.position = finalTile.transform.position;
                         myFx.PlayOneShot(moveFx);
                         theStateManager.hasUsedSpecialItem = true;
-                        thePromptText.promptText("Player 1 didnt had axe so you moved up");
-                        Debug.Log("Player 1 didn't had axe so you moved up");
+                        thePromptText.promptText("Player 1 didnt had axe so Player 2 moved up");
+                        Debug.Log("Player 1 didnt had axe so Player 2 moved up");
                     }
                 } else if(finalTile.NextTiles[2] != null) {
                     if(theStateManager.PlayerTwoSnakeCharmer != 0) {
-                         theStateManager.PlayerTwoSnakeCharmer = theStateManager.PlayerTwoSnakeCharmer - 1;
-                        theStateManager.hasUsedSpecialItem = true;
-                        thePromptText.promptText("You(player2) got saved by snakecharmer");
-                        Debug.Log("Player 2 got saved by snakecharmer");
+                    	while(theStateManager.PlayerTwoSnakeCharmer != 0 && theStateManager.PlayerOneSnakeCharmer != 0) {
+                        	theStateManager.PlayerTwoSnakeCharmer = theStateManager.PlayerTwoSnakeCharmer - 1;
+                        	theStateManager.hasUsedSpecialItem = true;
+                        	thePromptText.promptText("Player 2 got saved by snakecharmer");
+                        	Debug.Log("Player 2 got saved by snakecharmer");
+                        	theStateManager.PlayerOneSnakeCharmer = theStateManager.PlayerOneSnakeCharmer - 1;
+                            theStateManager.hasUsedSpecialItem = true;
+                            thePromptText.promptText("Player 1 used its snakecharmer as a counter");
+                            Debug.Log("Player 1 used its snakecharmer as a counter");
+                        }
+                        if(theStateManager.PlayerOneSnakeCharmer == 0 && theStateManager.PlayerTwoSnakeCharmer != 0) {
+                            theStateManager.PlayerTwoSnakeCharmer = theStateManager.PlayerTwoSnakeCharmer - 1;
+                            theStateManager.hasUsedSpecialItem = true;
+                            thePromptText.promptText("Player 2 finally got saved by snakecharmer");
+                            Debug.Log("Player 2 finally got saved by snakecharmer");
+                        } else if(theStateManager.PlayerOneSnakeCharmer != 0 && theStateManager.PlayerTwoSnakeCharmer == 0) {
+                            finalTile = finalTile.NextTiles[2];
+                            this.transform.position = finalTile.transform.position;
+                            myFx.PlayOneShot(moveFx);
+                            theStateManager.hasUsedSpecialItem = true;
+                            thePromptText.promptText("No snakecharmer Player 2 goes down");
+                            Debug.Log("No snakecharmer Player 2 goes down");
+                        } else if(theStateManager.PlayerOneSnakeCharmer == 0 && theStateManager.PlayerTwoSnakeCharmer == 0)  {
+                            finalTile = finalTile.NextTiles[2];
+                            this.transform.position = finalTile.transform.position;
+                            myFx.PlayOneShot(moveFx);
+                            theStateManager.hasUsedSpecialItem = true;
+                            thePromptText.promptText("No snakecharmer Player 2 goes down");
+                            Debug.Log("No snakecharmer Player 2 goes down");
+                        }
                     } else {
                         finalTile = finalTile.NextTiles[2];
                         this.transform.position = finalTile.transform.position;
                         myFx.PlayOneShot(moveFx);
                         theStateManager.hasUsedSpecialItem = true;
-                        thePromptText.promptText("No snakecharmer sorry you(player2) have to go down");
-                        Debug.Log("No snakecharmer sorry you(player2) have to go down");
+                        thePromptText.promptText("No snakecharmer Player 2 goes down");
+                        Debug.Log("No snakecharmer Player 2 goes down");
                     }
                 }
             }
