@@ -6,6 +6,8 @@
 
 ![Alt text](Images/UNITY.png?raw=true "Launch")
 
+![Alt text](Images/BOARD.png?raw=true "Board")
+
 ## Gameplay
 
 In a 1vs1 traditional Snakes and Ladders board, each player starts with a token on the starting square. Players take turns rolling a single die to move their token by the number of squares indicated by the die roll. Tokens follow a fixed route marked on the gameboard. 
