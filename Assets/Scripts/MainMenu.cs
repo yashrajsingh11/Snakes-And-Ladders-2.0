@@ -6,11 +6,15 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-   public void PlayGame()
+   public async void PlayGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         AuthResults auth = new AuthResults();
-        auth.loginAnno();
+        try {
+         var x =   await auth.loginAnno();
+        }
+        catch { }
+      
         Debug.Log("Hey !! It's me");
     }
 

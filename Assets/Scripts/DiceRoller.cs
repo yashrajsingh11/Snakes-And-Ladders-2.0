@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Firebase.Auth;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,7 +7,18 @@ using UnityEngine.UI;
 public class DiceRoller : MonoBehaviour {
     // Start is called before the first frame update
     void Start() {
-    	theStateManager = GameObject.FindObjectOfType<StateManager>();
+        //Load Data in UI
+        FirebaseAuth a = FirebaseAuth.DefaultInstance;
+        FirebaseFirestoreDatabaseX database = new FirebaseFirestoreDatabaseX(a.CurrentUser.UserId);
+        List<UserModelClassX> newP =  database.getDataXX();
+        for(int i =0;i<newP.Count;i++)
+        {
+            Debug.Log(newP[i].uidT);
+        }
+        
+
+        //
+        theStateManager = GameObject.FindObjectOfType<StateManager>();
         theLuckyMenu = GameObject.FindObjectOfType<LuckyMenu>();
         theLuckyTextDisplay = GameObject.FindObjectOfType<LuckyTextDisplay>();
         thePlayerOneDetails = GameObject.FindObjectOfType<Player1Details>();

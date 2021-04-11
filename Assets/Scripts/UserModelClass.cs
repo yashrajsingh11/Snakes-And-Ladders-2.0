@@ -6,10 +6,11 @@ using System;
 public class UserModelClassX
 {
     public string uidT;
-
-    public UserModelClassX(string uid)
+    public bool isPresnt;
+    public UserModelClassX(string uid,bool isP)
     {
         uidT = uid;
+        isPresnt = isP;
     }
 
     public Dictionary<string, object> toJsonX()
@@ -21,19 +22,5 @@ public class UserModelClassX
         { "dateTime",DateTime.Now}
     };
         return gamePlayer;
-    }
-  /*  UserModelClass fromJson(Dictionary<string, object> data)
-    {
-        if(data == null)
-        {
-            return null;
-        }
-        else
-        {
-            return UserModelClass(data["uid"] == null ? "" : data["uid"],data["isOnline"] == null ? false : data["isOnline"]); 
-        }
-    }
-  */
-
-    
+    }    
 }

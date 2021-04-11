@@ -5,10 +5,10 @@ using Firebase;
 using Firebase.Auth;
 using System;
 
-public class AuthResults
+public class AuthResults 
 {
     public Firebase.Auth.FirebaseAuth auth = Firebase.Auth.FirebaseAuth.DefaultInstance;
-    public void loginAnno()
+    public  void loginAnno()
     {
         auth.SignInAnonymouslyAsync().ContinueWith(task =>
         {
@@ -19,6 +19,7 @@ public class AuthResults
             }
             if (task.IsFaulted)
             {
+               
                 Debug.LogError("SignInAnonymouslyAsync encountered an error: " + task.Exception);
                 return;
             }
@@ -26,7 +27,7 @@ public class AuthResults
             Firebase.Auth.FirebaseUser newUser = task.Result;
             FirebaseFirestoreDatabaseX firebase = new FirebaseFirestoreDatabaseX(newUser.UserId);
             firebase.addUserToDatabase();
-            Debug.LogFormat("User signed in successfully: {0} ({1})",
+            Debug.LogFormat(
                 newUser.UserId);
         });
     }
