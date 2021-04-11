@@ -5,14 +5,15 @@ using Firebase;
 using Firebase.Firestore;
 using Firebase.Auth;
 
-public class FirebaseFirestoreDatabase
+public class FirebaseFirestoreDatabaseX
 {
     public string useridXXXX;
-    public FirebaseUser user;
-    public FirebaseFirestoreDatabase(string userId, FirebaseUser cure)
+   // public FirebaseUser user;
+    public FirebaseFirestoreDatabaseX(string userId)
+        // FirebaseUser cure
     {
         useridXXXX = userId;
-        user = cure;
+       // user = cure;
     }
     FirebaseFirestore _refrence = FirebaseFirestore.DefaultInstance;
     //Addding User to Firestore when game starts...
@@ -40,9 +41,10 @@ public class FirebaseFirestoreDatabase
     //Removing users from database when game Exits....
     public void removeUserFromDatabase()
     {
+        Debug.Log("I am In");
         FirebaseAuth auth = FirebaseAuth.DefaultInstance;
-        
         _refrence.Collection("Users").Document(useridXXXX).DeleteAsync();
         auth.CurrentUser.DeleteAsync();
+        Debug.Log("User Deleted");
     }
 }

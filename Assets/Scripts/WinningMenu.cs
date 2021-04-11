@@ -1,3 +1,4 @@
+using Firebase.Auth;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,6 +16,8 @@ public class WinningMenu : MonoBehaviour
     public GameObject winMenu;
     StateManager theStateManager;
     WinnerText theWinnerText;
+    
+
 
     // Update is called once per frame
     void Update()
@@ -39,6 +42,9 @@ public class WinningMenu : MonoBehaviour
 
     public void Exit()
     {
+        FirebaseAuth a = FirebaseAuth.DefaultInstance;
+        FirebaseFirestoreDatabaseX database = new FirebaseFirestoreDatabaseX(a.CurrentUser.UserId);
+        database.removeUserFromDatabase();
         SceneManager.LoadScene("Menu");
     }
 }

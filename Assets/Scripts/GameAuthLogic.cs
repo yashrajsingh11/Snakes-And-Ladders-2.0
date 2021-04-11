@@ -24,7 +24,7 @@ public class AuthResults
             }
 
             Firebase.Auth.FirebaseUser newUser = task.Result;
-            FirebaseFirestoreDatabase firebase = new FirebaseFirestoreDatabase(newUser.UserId,newUser);
+            FirebaseFirestoreDatabaseX firebase = new FirebaseFirestoreDatabaseX(newUser.UserId);
             firebase.addUserToDatabase();
             Debug.LogFormat("User signed in successfully: {0} ({1})",
                 newUser.UserId);
