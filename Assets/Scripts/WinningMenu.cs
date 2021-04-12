@@ -4,11 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class WinningMenu : MonoBehaviour
-{
+public class WinningMenu : MonoBehaviour {
 
-    void Start()
-    {
+    void Start() {
         theStateManager = GameObject.FindObjectOfType<StateManager>();
         theWinnerText = GameObject.FindObjectOfType<WinnerText>();
     }
@@ -17,31 +15,24 @@ public class WinningMenu : MonoBehaviour
     StateManager theStateManager;
     WinnerText theWinnerText;
     
-
-
     // Update is called once per frame
-    void Update()
-    {
-        if(theStateManager.isGameOver == true)
-        {
+    void Update() {
+        if(theStateManager.isGameOver == true) {
             winMenu.SetActive(true);
             Time.timeScale = 0f;
             hasWon = true;
         }
-        else
-        {
+        else {
             hasWon = false;
         }
     }
 
-    public void Replay()
-    {
+    public void Replay() {
         Time.timeScale = 1f;
         SceneManager.LoadScene("SampleScene");
     }
 
-    public void Exit()
-    {
+    public void Exit() {
         FirebaseAuth a = FirebaseAuth.DefaultInstance;
         FirebaseFirestoreDatabaseX database = new FirebaseFirestoreDatabaseX(a.CurrentUser.UserId);
         database.removeUserFromDatabase();

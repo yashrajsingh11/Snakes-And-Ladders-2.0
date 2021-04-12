@@ -4,25 +4,21 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-public class MainMenu : MonoBehaviour
-{
-   public async void PlayGame()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        AuthResults auth = new AuthResults();
-        try {
-         var x =   await auth.loginAnno();
-        }
-        catch { }
-      
-        Debug.Log("Hey !! It's me");
-    }
-
+public class MainMenu : MonoBehaviour {
+   
+	// public void PlayGame() {
+ //        // AuthResults auth = new AuthResults();
+ //        // auth.loginAnno();
+ //        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+ //        Debug.Log("Hey !! It's me");
+ //    }
+	
     public void QuitGame()
     {
         Debug.Log("Quit!");
         Application.Quit();
     }
+    
 }
 
 
