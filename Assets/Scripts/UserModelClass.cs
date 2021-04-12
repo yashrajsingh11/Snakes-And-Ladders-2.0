@@ -23,7 +23,19 @@ public class UserModelClassX
         { "dateTime",DateTime.Now.ToString()}
     };
         return gamePlayer;
-    } 
+    }
+    public Dictionary<string, object> toJsonRoomCreateXX(string userId1,string userId2)
+    {
+        Dictionary<string, object> PlayersRoom = new Dictionary<string, object>
+    {
+        { "player1Uid", userId1 },
+        { "player2Uid", userId2 },
+        { "player1Move", true },
+        { "player2Move", false },
+        { "dateTime",DateTime.Now.ToString()}
+    };
+        return PlayersRoom;
+    }
 }
 
 [FirestoreData]
