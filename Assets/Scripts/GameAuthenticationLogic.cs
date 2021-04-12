@@ -16,7 +16,7 @@ public class GameAuthenticationLogic : MonoBehaviour {
     public bool isConnectedToServer = false;
     public bool allPlayerPresent = false;
     public string useridXXXX;
-    public List <Dictionary<string, object>> userDataAll = new List<Dictionary<string, object>>();
+    public List <UserDeserializeData> userDataAll = new List<UserDeserializeData>();
 
 
     // Update is called once per frame
@@ -56,29 +56,25 @@ public class GameAuthenticationLogic : MonoBehaviour {
             .SetAsync(userClassModel.toJsonX())
            .ContinueWith(task => {
             Debug.Log("Mast");
-
+               ///NewCodeLine....
         	_refrence.Collection("Users").GetSnapshotAsync().ContinueWith(task=> {
-
             	QuerySnapshot snapshot = task.Result;
             	foreach (DocumentSnapshot document in snapshot.Documents) {
                 	Dictionary<string, object> resultsHere = document.ToDictionary();
-                	userDataAll.Add(resultsHere);
+                    UserDeserializeData dsData = new UserDeserializeData
+                    {
+                       uid = resultsHere["uid"].ToString(),
+                       isOnline = bool.Parse(resultsHere["isOnline"].ToString()),
+                       dateTime = resultsHere["dateTime"].ToString(),
+                    };
+                    userDataAll.Add(dsData);
             	};
-            // for(int i = 0; i < userDataAll.Count; i++) {
-            // 	UserModelClassX p = getDetails(userDataAll[i]);
-            // 	Debug.Log(p.uidT);
-            // }
-            		Debug.Log(userDataAll.Count);
+                //
+            for(int i = 0; i < userDataAll.Count; i++) {
+             	Debug.Log(userDataAll[i].uid);
+            }
         	isConnectedToServer = true;
         	});
         });
     }
-
-    // public UserModelClassX getDetails(Dictionary<string, object> data) {
-    // 	if(data == null) {
-    // 		return null;
-    // 	}
-    // 	return UserModelClassX(data["uid"] == null ? "" : data["uid"], data["isOnline"] == null ? "" : data["isOnline"]);
-    // }
-
 }
