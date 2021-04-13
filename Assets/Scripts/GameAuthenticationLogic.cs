@@ -27,12 +27,36 @@ public class GameAuthenticationLogic : MonoBehaviour
     void Update()
     {
 
-        if (isConnectedToServer == true || allPlayerPresent == true)
+        if (isConnectedToServer == true && allPlayerPresent == true)
         {
             SceneManager.LoadSceneAsync("SampleScene");
             Debug.Log("Hey Its Me");
         }
         isConnectedToServer = false;
+        FirebaseFirestore _refrence = FirebaseFirestore.DefaultInstance;
+        for (int i = 0; i < userDataAll.Count; i++) {
+          //Player 1 and Player 2
+          if (userDataAll[i].isOnline && userDataAll[i].uid != useridXXXX && userDataAll.Count > 1 && isConnectedToServer == true) {
+            player2iD = userDataAll[i].uid;
+            Debug.Log(useridXXXX);
+                  Debug.Log(player2iD);
+                  UserModelClassX userClassModel = new UserModelClassX(useridXXXX, true);
+                  if(!string.IsNullOrEmpty(player2iD)) {
+                  _refrence.Collection("Room").Document(useridXXXX + player2iD).SetAsync(
+   userClassModel.toJsonRoomCreateXX(useridXXXX, player2iD)
+
+                   ).ContinueWith(task =>
+               {
+                   Debug.Log("Hello Rooms");
+                   allPlayerPresent = true;
+               });
+            break;
+          }
+          } else {
+            Debug.Log("Ruk jao bhai");
+          }
+        }
+        allPlayerPresent = false;
     }
 
     public void loginAnno()
@@ -85,30 +109,6 @@ public class GameAuthenticationLogic : MonoBehaviour
                       userDataAll.Add(dsData);
                   };
                  isConnectedToServer = true;
-                  ///Apply a binary search
-                  for (int i = 0; i < userDataAll.Count; i++)
-                  {
-                       //Player 1 and Player 2
-                       if (userDataAll[i].isOnline && userDataAll[i].uid != useridXXXX)
-                      {
-                          player2iD = userDataAll[i].uid;
-                          break;
-                      }
-
-                  }
-                  Debug.Log(useridXXXX);
-                  Debug.Log(player2iD);
-                  UserModelClassX userClassModel = new UserModelClassX(useridXXXX, true);
-                  _refrence.Collection("Room").Document(useridXXXX + player2iD).SetAsync(
-   userClassModel.toJsonRoomCreateXX(useridXXXX, player2iD)
-
-                   ).ContinueWith(task =>
-               {
-                   Debug.Log("Hello Rooms");
-
-               });
-             
-
               });
           });
     }
