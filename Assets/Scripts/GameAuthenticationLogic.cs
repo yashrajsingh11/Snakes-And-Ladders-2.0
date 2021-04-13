@@ -31,8 +31,10 @@ public class GameAuthenticationLogic : MonoBehaviour
         {
             SceneManager.LoadSceneAsync("SampleScene");
             Debug.Log("Hey Its Me");
+            isConnectedToServer = false;
+            allPlayerPresent = false;  
         }
-        isConnectedToServer = false;
+        if(isConnectedToServer == true && allPlayerPresent == false) {
         FirebaseFirestore _refrence = FirebaseFirestore.DefaultInstance;
         for (int i = 0; i < userDataAll.Count; i++) {
           //Player 1 and Player 2
@@ -56,7 +58,7 @@ public class GameAuthenticationLogic : MonoBehaviour
             Debug.Log("Ruk jao bhai");
           }
         }
-        allPlayerPresent = false;
+      }
     }
 
     public void loginAnno()
