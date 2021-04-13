@@ -19,7 +19,9 @@ public class GameAuthenticationLogic : MonoBehaviour {
     public string useridXXXX;
     public string player2iD = "";
 
+
     public List<UserDeserializeData> userDataAll = new List<UserDeserializeData>();
+    public List<RoomsDataXXXX> roomInfromation = new List<RoomsDataXXXX>();
 
 
     // Update is called once per frame
@@ -60,7 +62,8 @@ public class GameAuthenticationLogic : MonoBehaviour {
     public void abc() {
 
         FirebaseFirestore _refrence = FirebaseFirestore.DefaultInstance;
-        if(userDataAll.Count <= 1) {
+        //If not already in list then add to list and list must have less than or equal to 2 players
+        if(userDataAll.Count <= 1 && !userDataAll.Exists(element => element.uid == useridXXXX)) {
             _refrence.Collection("Users").GetSnapshotAsync().ContinueWith(task => {
                 QuerySnapshot snapshot = task.Result;
                 foreach (DocumentSnapshot document in snapshot.Documents) {
@@ -74,8 +77,8 @@ public class GameAuthenticationLogic : MonoBehaviour {
                     userDataAll.Add(dsData);
                 };
             });
+            Debug.Log("abc ran");
         }
-        Debug.Log("abc ran");
     }
 
     public void loginAnno() {
@@ -110,6 +113,28 @@ public class GameAuthenticationLogic : MonoBehaviour {
     }
 }
 
+    public void searchForRooms()
+    {
+        FirebaseFirestore _refrence = FirebaseFirestore.DefaultInstance;
+        _refrence.Collection("Room").GetSnapshotAsync().ContinueWith(task => {
+            QuerySnapshot snapshot = task.Result;
+            foreach (DocumentSnapshot document in snapshot.Documents)
+            {
+                Dictionary<string, object> resultsHere = document.ToDictionary();
+                ///deserizz the data code
+                RoomsDataXXXX romxx = new RoomsDataXXXX
+                {
+                    player1Uid = resultsHere["player1Uid"].ToString(),
+                    player2Uid = resultsHere["player2Uid"].ToString(),
+                    player1Move = bool.Parse(resultsHere["player1Move"].ToString()),
+                    player2Move = bool.Parse(resultsHere["player2Move"].ToString()),
+                    dateTime = resultsHere["dateTime"].ToString(),
+                    roomKey = resultsHere["roomKey"].ToString(),
+                };
+                roomInfromation.Add(romxx);
+            };
+        });
+    } 
 
 //update PlayerMove
 /*
