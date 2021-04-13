@@ -24,12 +24,12 @@ public class UserModelClassX
     };
         return gamePlayer;
     }
-    public Dictionary<string, object> toJsonRoomCreateXX(string userId1,string userId2)
+    public Dictionary<string, object> toJsonRoomCreateXX(string userId1)
     {
         Dictionary<string, object> PlayersRoom = new Dictionary<string, object>
     {
         { "player1Uid", userId1 },
-        { "player2Uid", userId2 },
+        { "player2Uid", "" },
         { "player1Move", true },
         { "player2Move", false },
         { "dateTime",DateTime.Now.ToString()}

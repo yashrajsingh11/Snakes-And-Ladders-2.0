@@ -42,22 +42,64 @@ public class GameAuthenticationLogic : MonoBehaviour {
                 abc();
                 if (userDataAll[i].isOnline && userDataAll[i].uid != useridXXXX && userDataAll.Count > 1) {
                     player2iD = userDataAll[i].uid;
+                    Dictionary<string, object> jjjjjjsd = new Dictionary<string, object> {
+                        { "player2Uid", player2iD },
+                         };
+                    if(!roomInfromation.Exists(element => element.player2Uid == player2iD)&& roomInfromation.Exists(element =>String.IsNullOrEmpty(element.player2Uid)))
+                    {
+                        _refrence.Collection("Room").Document(useridXXXX).UpdateAsync(jjjjjjsd).ContinueWith(task => {
+                            Debug.Log("Second UserAdded to First User Room ");
+                            ///Game Begin.
+                            isEveryonePresent = true;
+                        });
+                    }
+                    
                     Debug.Log(useridXXXX);
                     Debug.Log(player2iD);
-                    UserModelClassX userClassModel = new UserModelClassX(useridXXXX, true);
-                    _refrence.Collection("Room").Document(useridXXXX + player2iD).SetAsync(userClassModel.toJsonRoomCreateXX(useridXXXX, player2iD)
-                    ).ContinueWith(task => {
-                        Debug.Log("Entering room");
-                        isInRoom = true;
-                    });
-                        isEveryonePresent = true;
+                    searchForRooms();
                     break;
                 } else {
+                    
                     Debug.Log("Waiting for second user");
                 }
             }
         }
     }
+    //new Code
+    public void createARooom()
+    {
+        FirebaseFirestore _refrence = FirebaseFirestore.DefaultInstance;
+        UserModelClassX userClassModel = new UserModelClassX(useridXXXX, true);
+        _refrence.Collection("Room").Document(useridXXXX).SetAsync(userClassModel.toJsonRoomCreateXX(useridXXXX)
+        ).ContinueWith(task => {
+            Debug.Log("Entering room");
+            isInRoom = true;
+        });
+
+    }
+    public void searchForRooms()
+    {
+        FirebaseFirestore _refrence = FirebaseFirestore.DefaultInstance;
+        _refrence.Collection("Room").GetSnapshotAsync().ContinueWith(task => {
+            QuerySnapshot snapshot = task.Result;
+            foreach (DocumentSnapshot document in snapshot.Documents)
+            {
+                Dictionary<string, object> resultsHere = document.ToDictionary();
+                ///deserizz the data code
+                RoomsDataXXXX romxx = new RoomsDataXXXX
+                {
+                    player1Uid = resultsHere["player1Uid"].ToString(),
+                    player2Uid = resultsHere["player2Uid"].ToString(),
+                    player1Move = bool.Parse(resultsHere["player1Move"].ToString()),
+                    player2Move = bool.Parse(resultsHere["player2Move"].ToString()),
+                    dateTime = resultsHere["dateTime"].ToString(),
+                    roomKey = resultsHere["roomKey"].ToString(),
+                };
+                roomInfromation.Add(romxx);
+            };
+        });
+    }
+    //
 
     public void abc() {
 
@@ -100,7 +142,6 @@ public class GameAuthenticationLogic : MonoBehaviour {
     }
 
     public void addUserToDatabase() {
-
         FirebaseFirestore _refrence = FirebaseFirestore.DefaultInstance;
         UserModelClassX userClassModel = new UserModelClassX(useridXXXX, true);
         _refrence.Collection("Users").Document(useridXXXX)
@@ -109,32 +150,19 @@ public class GameAuthenticationLogic : MonoBehaviour {
                 Debug.Log("Connected To Server");
                 isConnectedToServer = true;
                 abc();
+                //if Room are Empty create a room by firstLogin User and check the 2nd user id is filled or not
+                if (roomInfromation.Count == 0)
+                {
+                    createARooom();
+
+                    ///Let tell him to wait
+                }
+         
         });
     }
 }
 
-    public void searchForRooms()
-    {
-        FirebaseFirestore _refrence = FirebaseFirestore.DefaultInstance;
-        _refrence.Collection("Room").GetSnapshotAsync().ContinueWith(task => {
-            QuerySnapshot snapshot = task.Result;
-            foreach (DocumentSnapshot document in snapshot.Documents)
-            {
-                Dictionary<string, object> resultsHere = document.ToDictionary();
-                ///deserizz the data code
-                RoomsDataXXXX romxx = new RoomsDataXXXX
-                {
-                    player1Uid = resultsHere["player1Uid"].ToString(),
-                    player2Uid = resultsHere["player2Uid"].ToString(),
-                    player1Move = bool.Parse(resultsHere["player1Move"].ToString()),
-                    player2Move = bool.Parse(resultsHere["player2Move"].ToString()),
-                    dateTime = resultsHere["dateTime"].ToString(),
-                    roomKey = resultsHere["roomKey"].ToString(),
-                };
-                roomInfromation.Add(romxx);
-            };
-        });
-    } 
+
 
 //update PlayerMove
 /*
