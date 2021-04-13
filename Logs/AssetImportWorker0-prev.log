@@ -15,11 +15,11 @@ D:/GitHub/Snakes-And-Ladders-2.0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-52081
+53863
 Successfully changed project path to: D:/GitHub/Snakes-And-Ladders-2.0
 D:/GitHub/Snakes-And-Ladders-2.0
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 57.21 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 67.74 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.0f1 (c7b5465681fb)
 [Subsystems] Discovering subsystems at path D:/Program Files/UNity/2020.3.0f1/Editor/Data/Resources/UnitySubsystems
@@ -36,126 +36,1389 @@ Initialize mono
 Mono path[0] = 'D:/Program Files/UNity/2020.3.0f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Program Files/UNity/2020.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/Program Files/UNity/2020.3.0f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56392
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56456
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Program Files/UNity/2020.3.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001700 seconds.
+Registered in 0.001630 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 51.77 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 52.05 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.503 seconds
+- Completed reload, in  1.597 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.017060 seconds.
+Registered in 0.018025 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 89.70 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 62.42 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.943 seconds
+- Completed reload, in  1.821 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.12 seconds
-Refreshing native plugins compatible for Editor in 2.49 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 1.15 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2483 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 113.8 MB.
 System memory in use after: 114.0 MB.
 
 Unloading 47 unused Assets to reduce memory usage. Loaded Objects now: 2903.
-Total: 7.327800 ms (FindLiveObjects: 0.808600 ms CreateObjectMapping: 0.396100 ms MarkObjects: 5.899900 ms  DeleteObjects: 0.220000 ms)
+Total: 4.557700 ms (FindLiveObjects: 0.502300 ms CreateObjectMapping: 0.470700 ms MarkObjects: 3.460800 ms  DeleteObjects: 0.121100 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Scripts/GameDatabaseLogic.cs
-  artifactKey: Guid(9f6e29f5480376d48a2beddd4ba0913e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/GameDatabaseLogic.cs using Guid(9f6e29f5480376d48a2beddd4ba0913e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31b4cfbacd056f33acbbcb35d3ccb6af') in 0.101112 seconds
-  Import took 0.141943 seconds .
+  path: Assets/Scripts/GameAuthLogic.cs
+  artifactKey: Guid(a3d865eb25925344fa33341cf5361d98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameAuthLogic.cs using Guid(a3d865eb25925344fa33341cf5361d98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42b3a47efa47bfb6c0ffb54b6deb0334') in 0.054755 seconds
+  Import took 0.131212 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000360 seconds.
+  path: Assets/Scripts/GameAuthenticationLogic.cs
+  artifactKey: Guid(83ec6d9927d5c404691a3bbc2887e825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameAuthenticationLogic.cs using Guid(83ec6d9927d5c404691a3bbc2887e825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1930b06a1eec5dd9b639a09e88ba9475') in 0.005378 seconds
+  Import took 0.034302 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 103.562755 seconds.
+  path: Assets/Scripts/GameAuthenticationLogic.cs
+  artifactKey: Guid(83ec6d9927d5c404691a3bbc2887e825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameAuthenticationLogic.cs using Guid(83ec6d9927d5c404691a3bbc2887e825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0daee605cecc769da17b99d87d57827f') in 0.004958 seconds
+  Import took 0.099658 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 37.037622 seconds.
+  path: Assets/Scripts/GameAuthenticationLogic.cs
+  artifactKey: Guid(83ec6d9927d5c404691a3bbc2887e825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameAuthenticationLogic.cs using Guid(83ec6d9927d5c404691a3bbc2887e825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e05792b14e6f0d8dfed49e8254d4bbea') in 0.004160 seconds
+  Import took 0.084084 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.851269 seconds.
+  path: Assets/Scripts/GameAuthenticationLogic.cs
+  artifactKey: Guid(83ec6d9927d5c404691a3bbc2887e825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameAuthenticationLogic.cs using Guid(83ec6d9927d5c404691a3bbc2887e825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a07e13685983ef43f093b78eac494353') in 0.005114 seconds
+  Import took 0.033197 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.363923 seconds.
+  path: Assets/Scripts/GameAuthenticationLogic.cs
+  artifactKey: Guid(83ec6d9927d5c404691a3bbc2887e825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameAuthenticationLogic.cs using Guid(83ec6d9927d5c404691a3bbc2887e825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1fcc5920259f163ab8a6895ba2db9f2') in 0.004701 seconds
+  Import took 0.028313 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.861506 seconds.
+  path: Assets/Scripts/GameAuthenticationLogic.cs
+  artifactKey: Guid(83ec6d9927d5c404691a3bbc2887e825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameAuthenticationLogic.cs using Guid(83ec6d9927d5c404691a3bbc2887e825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84f361303c178e649536084e2fcf56a3') in 0.005788 seconds
+  Import took 0.039905 seconds .
 
 ========================================================================
 Received Prepare
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 22.00 ms, found 4 plugins.
+Registering precompiled user dll's ...
+Registered in 0.018007 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 40 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 61.5 MB.
-System memory in use after: 61.7 MB.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.319 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.01 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2408 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 108.5 MB.
+System memory in use after: 108.7 MB.
 
-Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 2903.
-Total: 4.205900 ms (FindLiveObjects: 0.455900 ms CreateObjectMapping: 0.221700 ms MarkObjects: 3.476200 ms  DeleteObjects: 0.049800 ms)
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 2906.
+Total: 3.823900 ms (FindLiveObjects: 0.512500 ms CreateObjectMapping: 0.255000 ms MarkObjects: 3.013900 ms  DeleteObjects: 0.040900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.015000 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.93 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.IO.IOException: Sharing violation on path D:\GitHub\Snakes-And-Ladders-2.0\ProjectSettings\GvhProjectSettings.xml
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options, System.String msgPath, System.Boolean bFromProxy, System.Boolean useLongPath, System.Boolean checkHost) [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions,string,bool,bool,bool)
+  at System.IO.StreamReader..ctor (System.String path, System.Text.Encoding encoding, System.Boolean detectEncodingFromByteOrderMarks, System.Int32 bufferSize, System.Boolean checkHost) [0x00067] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.IO.StreamReader..ctor (System.String path, System.Text.Encoding encoding, System.Boolean detectEncodingFromByteOrderMarks, System.Int32 bufferSize) [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.IO.StreamReader..ctor (System.String path, System.Boolean detectEncodingFromByteOrderMarks) [0x0000d] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.IO.StreamReader..ctor (System.String path) [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamReader..ctor(string)
+  at Google.XmlUtilities.ParseXmlTextFileElements (System.String filename, Google.Logger logger, Google.XmlUtilities+ParseElement parseElement) [0x0000f] in Z:\tmp\tmp.4VZkA25lCS\third_party\unity\unity_jar_resolver\source\VersionHandlerImpl\src\XmlUtilities.cs:104 
+  at Google.ProjectSettings.Load () [0x00012] in Z:\tmp\tmp.4VZkA25lCS\third_party\unity\unity_jar_resolver\source\VersionHandlerImpl\src\ProjectSettings.cs:776 
+  at Google.ProjectSettings.LoadIfEmpty () [0x0001b] in Z:\tmp\tmp.4VZkA25lCS\third_party\unity\unity_jar_resolver\source\VersionHandlerImpl\src\ProjectSettings.cs:557 
+  at Google.ProjectSettings.GetBool (System.String name, System.Boolean defaultValue, Google.SettingsLocation location) [0x0002b] in Z:\tmp\tmp.4VZkA25lCS\third_party\unity\unity_jar_resolver\source\VersionHandlerImpl\src\ProjectSettings.cs:605 
+  at Google.ProjectSettings.GetBool (System.String name, System.Boolean defaultValue) [0x00000] in Z:\tmp\tmp.4VZkA25lCS\third_party\unity\unity_jar_resolver\source\VersionHandlerImpl\src\ProjectSettings.cs:618 
+  at Google.IOSResolver.get_VerboseLoggingEnabled () [0x00000] in Z:\tmp\tmp.UqmC3NoJVN\third_party\unity\unity_jar_resolver\source\IOSResolver\src\IOSResolver.cs:984 
+  at Google.IOSResolver..cctor () [0x001ec] in Z:\tmp\tmp.UqmC3NoJVN\third_party\unity\unity_jar_resolver\source\IOSResolver\src\IOSResolver.cs:689 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+IOException: Sharing violation on path D:\GitHub\Snakes-And-Ladders-2.0\ProjectSettings\GvhProjectSettings.xml
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options, System.String msgPath, System.Boolean bFromProxy, System.Boolean useLongPath, System.Boolean checkHost) [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions,string,bool,bool,bool)
+  at System.IO.StreamReader..ctor (System.String path, System.Text.Encoding encoding, System.Boolean detectEncodingFromByteOrderMarks, System.Int32 bufferSize, System.Boolean checkHost) [0x00067] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.IO.StreamReader..ctor (System.String path, System.Text.Encoding encoding, System.Boolean detectEncodingFromByteOrderMarks, System.Int32 bufferSize) [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.IO.StreamReader..ctor (System.String path, System.Boolean detectEncodingFromByteOrderMarks) [0x0000d] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.IO.StreamReader..ctor (System.String path) [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamReader..ctor(string)
+  at Google.XmlUtilities.ParseXmlTextFileElements (System.String filename, Google.Logger logger, Google.XmlUtilities+ParseElement parseElement) [0x0000f] in Z:\tmp\tmp.4VZkA25lCS\third_party\unity\unity_jar_resolver\source\VersionHandlerImpl\src\XmlUtilities.cs:104 
+  at Google.ProjectSettings.Load () [0x00012] in Z:\tmp\tmp.4VZkA25lCS\third_party\unity\unity_jar_resolver\source\VersionHandlerImpl\src\ProjectSettings.cs:776 
+  at Google.ProjectSettings.LoadIfEmpty () [0x0001b] in Z:\tmp\tmp.4VZkA25lCS\third_party\unity\unity_jar_resolver\source\VersionHandlerImpl\src\ProjectSettings.cs:557 
+  at Google.ProjectSettings.GetBool (System.String name, System.Boolean defaultValue, Google.SettingsLocation location) [0x0002b] in Z:\tmp\tmp.4VZkA25lCS\third_party\unity\unity_jar_resolver\source\VersionHandlerImpl\src\ProjectSettings.cs:605 
+  at Google.ProjectSettings.GetBool (System.String name, System.Boolean defaultValue) [0x00000] in Z:\tmp\tmp.4VZkA25lCS\third_party\unity\unity_jar_resolver\source\VersionHandlerImpl\src\ProjectSettings.cs:618 
+  at Google.IOSResolver.get_VerboseLoggingEnabled () [0x00000] in Z:\tmp\tmp.UqmC3NoJVN\third_party\unity\unity_jar_resolver\source\IOSResolver\src\IOSResolver.cs:984 
+  at Google.IOSResolver..cctor () [0x001ec] in Z:\tmp\tmp.UqmC3NoJVN\third_party\unity\unity_jar_resolver\source\IOSResolver\src\IOSResolver.cs:689 
+Rethrow as TypeInitializationException: The type initializer for 'Google.IOSResolver' threw an exception.
+  at (wrapper managed-to-native) System.Reflection.MonoCMethod.InternalInvoke(System.Reflection.MonoCMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoCMethod.InternalInvoke (System.Object obj, System.Object[] parameters) [0x00002] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+Rethrow as TargetInvocationException: Exception has been thrown by the target of an invocation.
+  at System.Reflection.MonoCMethod.InternalInvoke (System.Object obj, System.Object[] parameters) [0x00014] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.RuntimeType.CreateInstanceMono (System.Boolean nonPublic) [0x000a8] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.RuntimeType.CreateInstanceSlow (System.Boolean publicOnly, System.Boolean skipCheckThis, System.Boolean fillCache, System.Threading.StackCrawlMark& stackMark) [0x00009] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.RuntimeType.CreateInstanceDefaultCtor (System.Boolean publicOnly, System.Boolean skipCheckThis, System.Boolean fillCache, System.Threading.StackCrawlMark& stackMark) [0x00027] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Activator.CreateInstance (System.Type type, System.Boolean nonPublic) [0x00020] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Activator.CreateInstance (System.Type type) [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at UnityEditor.AssetPostprocessingInternal.GetMeshProcessorsHashString () [0x00035] in <50f55621a2ca4f31a35283e2979a8bf5>:0 
+UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+UnityEngine.Logger:LogException(Exception, Object)
+UnityEngine.Debug:LogException(Exception)
+UnityEditor.AssetPostprocessingInternal:GetMeshProcessorsHashString()
+
+IOException: Sharing violation on path D:\GitHub\Snakes-And-Ladders-2.0\ProjectSettings\GvhProjectSettings.xml
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options, System.String msgPath, System.Boolean bFromProxy, System.Boolean useLongPath, System.Boolean checkHost) [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions,string,bool,bool,bool)
+  at System.IO.StreamReader..ctor (System.String path, System.Text.Encoding encoding, System.Boolean detectEncodingFromByteOrderMarks, System.Int32 bufferSize, System.Boolean checkHost) [0x00067] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.IO.StreamReader..ctor (System.String path, System.Text.Encoding encoding, System.Boolean detectEncodingFromByteOrderMarks, System.Int32 bufferSize) [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.IO.StreamReader..ctor (System.String path, System.Boolean detectEncodingFromByteOrderMarks) [0x0000d] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.IO.StreamReader..ctor (System.String path) [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamReader..ctor(string)
+  at Google.XmlUtilities.ParseXmlTextFileElements (System.String filename, Google.Logger logger, Google.XmlUtilities+ParseElement parseElement) [0x0000f] in Z:\tmp\tmp.4VZkA25lCS\third_party\unity\unity_jar_resolver\source\VersionHandlerImpl\src\XmlUtilities.cs:104 
+  at Google.ProjectSettings.Load () [0x00012] in Z:\tmp\tmp.4VZkA25lCS\third_party\unity\unity_jar_resolver\source\VersionHandlerImpl\src\ProjectSettings.cs:776 
+  at Google.ProjectSettings.LoadIfEmpty () [0x0001b] in Z:\tmp\tmp.4VZkA25lCS\third_party\unity\unity_jar_resolver\source\VersionHandlerImpl\src\ProjectSettings.cs:557 
+  at Google.ProjectSettings.GetBool (System.String name, System.Boolean defaultValue, Google.SettingsLocation location) [0x0002b] in Z:\tmp\tmp.4VZkA25lCS\third_party\unity\unity_jar_resolver\source\VersionHandlerImpl\src\ProjectSettings.cs:605 
+  at Google.ProjectSettings.GetBool (System.String name, System.Boolean defaultValue) [0x00000] in Z:\tmp\tmp.4VZkA25lCS\third_party\unity\unity_jar_resolver\source\VersionHandlerImpl\src\ProjectSettings.cs:618 
+  at Google.IOSResolver.get_VerboseLoggingEnabled () [0x00000] in Z:\tmp\tmp.UqmC3NoJVN\third_party\unity\unity_jar_resolver\source\IOSResolver\src\IOSResolver.cs:984 
+  at Google.IOSResolver..cctor () [0x001ec] in Z:\tmp\tmp.UqmC3NoJVN\third_party\unity\unity_jar_resolver\source\IOSResolver\src\IOSResolver.cs:689 
+Rethrow as TypeInitializationException: The type initializer for 'Google.IOSResolver' threw an exception.
+  at (wrapper managed-to-native) System.Reflection.MonoCMethod.InternalInvoke(System.Reflection.MonoCMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoCMethod.InternalInvoke (System.Object obj, System.Object[] parameters) [0x00002] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+Rethrow as TargetInvocationException: Exception has been thrown by the target of an invocation.
+  at System.Reflection.MonoCMethod.InternalInvoke (System.Object obj, System.Object[] parameters) [0x00014] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.RuntimeType.CreateInstanceMono (System.Boolean nonPublic) [0x000a8] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.RuntimeType.CreateInstanceSlow (System.Boolean publicOnly, System.Boolean skipCheckThis, System.Boolean fillCache, System.Threading.StackCrawlMark& stackMark) [0x00009] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.RuntimeType.CreateInstanceDefaultCtor (System.Boolean publicOnly, System.Boolean skipCheckThis, System.Boolean fillCache, System.Threading.StackCrawlMark& stackMark) [0x00027] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Activator.CreateInstance (System.Type type, System.Boolean nonPublic) [0x00020] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Activator.CreateInstance (System.Type type) [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at UnityEditor.AssetPostprocessingInternal.GetTextureProcessorsHashString () [0x00035] in <50f55621a2ca4f31a35283e2979a8bf5>:0 
+UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+UnityEngine.Logger:LogException(Exception, Object)
+UnityEngine.Debug:LogException(Exception)
+UnityEditor.AssetPostprocessingInternal:GetTextureProcessorsHashString()
+
+IOException: Sharing violation on path D:\GitHub\Snakes-And-Ladders-2.0\ProjectSettings\GvhProjectSettings.xml
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options, System.String msgPath, System.Boolean bFromProxy, System.Boolean useLongPath, System.Boolean checkHost) [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions,string,bool,bool,bool)
+  at System.IO.StreamReader..ctor (System.String path, System.Text.Encoding encoding, System.Boolean detectEncodingFromByteOrderMarks, System.Int32 bufferSize, System.Boolean checkHost) [0x00067] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.IO.StreamReader..ctor (System.String path, System.Text.Encoding encoding, System.Boolean detectEncodingFromByteOrderMarks, System.Int32 bufferSize) [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.IO.StreamReader..ctor (System.String path, System.Boolean detectEncodingFromByteOrderMarks) [0x0000d] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.IO.StreamReader..ctor (System.String path) [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamReader..ctor(string)
+  at Google.XmlUtilities.ParseXmlTextFileElements (System.String filename, Google.Logger logger, Google.XmlUtilities+ParseElement parseElement) [0x0000f] in Z:\tmp\tmp.4VZkA25lCS\third_party\unity\unity_jar_resolver\source\VersionHandlerImpl\src\XmlUtilities.cs:104 
+  at Google.ProjectSettings.Load () [0x00012] in Z:\tmp\tmp.4VZkA25lCS\third_party\unity\unity_jar_resolver\source\VersionHandlerImpl\src\ProjectSettings.cs:776 
+  at Google.ProjectSettings.LoadIfEmpty () [0x0001b] in Z:\tmp\tmp.4VZkA25lCS\third_party\unity\unity_jar_resolver\source\VersionHandlerImpl\src\ProjectSettings.cs:557 
+  at Google.ProjectSettings.GetBool (System.String name, System.Boolean defaultValue, Google.SettingsLocation location) [0x0002b] in Z:\tmp\tmp.4VZkA25lCS\third_party\unity\unity_jar_resolver\source\VersionHandlerImpl\src\ProjectSettings.cs:605 
+  at Google.ProjectSettings.GetBool (System.String name, System.Boolean defaultValue) [0x00000] in Z:\tmp\tmp.4VZkA25lCS\third_party\unity\unity_jar_resolver\source\VersionHandlerImpl\src\ProjectSettings.cs:618 
+  at Google.IOSResolver.get_VerboseLoggingEnabled () [0x00000] in Z:\tmp\tmp.UqmC3NoJVN\third_party\unity\unity_jar_resolver\source\IOSResolver\src\IOSResolver.cs:984 
+  at Google.IOSResolver..cctor () [0x001ec] in Z:\tmp\tmp.UqmC3NoJVN\third_party\unity\unity_jar_resolver\source\IOSResolver\src\IOSResolver.cs:689 
+Rethrow as TypeInitializationException: The type initializer for 'Google.IOSResolver' threw an exception.
+  at (wrapper managed-to-native) System.Reflection.MonoCMethod.InternalInvoke(System.Reflection.MonoCMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoCMethod.InternalInvoke (System.Object obj, System.Object[] parameters) [0x00002] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+Rethrow as TargetInvocationException: Exception has been thrown by the target of an invocation.
+  at System.Reflection.MonoCMethod.InternalInvoke (System.Object obj, System.Object[] parameters) [0x00014] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.RuntimeType.CreateInstanceMono (System.Boolean nonPublic) [0x000a8] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.RuntimeType.CreateInstanceSlow (System.Boolean publicOnly, System.Boolean skipCheckThis, System.Boolean fillCache, System.Threading.StackCrawlMark& stackMark) [0x00009] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.RuntimeType.CreateInstanceDefaultCtor (System.Boolean publicOnly, System.Boolean skipCheckThis, System.Boolean fillCache, System.Threading.StackCrawlMark& stackMark) [0x00027] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Activator.CreateInstance (System.Type type, System.Boolean nonPublic) [0x00020] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Activator.CreateInstance (System.Type type) [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at UnityEditor.AssetPostprocessingInternal.GetAudioProcessorsHashString () [0x00035] in <50f55621a2ca4f31a35283e2979a8bf5>:0 
+UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+UnityEngine.Logger:LogException(Exception, Object)
+UnityEngine.Debug:LogException(Exception)
+UnityEditor.AssetPostprocessingInternal:GetAudioProcessorsHashString()
+
+IOException: Sharing violation on path D:\GitHub\Snakes-And-Ladders-2.0\ProjectSettings\GvhProjectSettings.xml
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options, System.String msgPath, System.Boolean bFromProxy, System.Boolean useLongPath, System.Boolean checkHost) [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions,string,bool,bool,bool)
+  at System.IO.StreamReader..ctor (System.String path, System.Text.Encoding encoding, System.Boolean detectEncodingFromByteOrderMarks, System.Int32 bufferSize, System.Boolean checkHost) [0x00067] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.IO.StreamReader..ctor (System.String path, System.Text.Encoding encoding, System.Boolean detectEncodingFromByteOrderMarks, System.Int32 bufferSize) [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.IO.StreamReader..ctor (System.String path, System.Boolean detectEncodingFromByteOrderMarks) [0x0000d] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.IO.StreamReader..ctor (System.String path) [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamReader..ctor(string)
+  at Google.XmlUtilities.ParseXmlTextFileElements (System.String filename, Google.Logger logger, Google.XmlUtilities+ParseElement parseElement) [0x0000f] in Z:\tmp\tmp.4VZkA25lCS\third_party\unity\unity_jar_resolver\source\VersionHandlerImpl\src\XmlUtilities.cs:104 
+  at Google.ProjectSettings.Load () [0x00012] in Z:\tmp\tmp.4VZkA25lCS\third_party\unity\unity_jar_resolver\source\VersionHandlerImpl\src\ProjectSettings.cs:776 
+  at Google.ProjectSettings.LoadIfEmpty () [0x0001b] in Z:\tmp\tmp.4VZkA25lCS\third_party\unity\unity_jar_resolver\source\VersionHandlerImpl\src\ProjectSettings.cs:557 
+  at Google.ProjectSettings.GetBool (System.String name, System.Boolean defaultValue, Google.SettingsLocation location) [0x0002b] in Z:\tmp\tmp.4VZkA25lCS\third_party\unity\unity_jar_resolver\source\VersionHandlerImpl\src\ProjectSettings.cs:605 
+  at Google.ProjectSettings.GetBool (System.String name, System.Boolean defaultValue) [0x00000] in Z:\tmp\tmp.4VZkA25lCS\third_party\unity\unity_jar_resolver\source\VersionHandlerImpl\src\ProjectSettings.cs:618 
+  at Google.IOSResolver.get_VerboseLoggingEnabled () [0x00000] in Z:\tmp\tmp.UqmC3NoJVN\third_party\unity\unity_jar_resolver\source\IOSResolver\src\IOSResolver.cs:984 
+  at Google.IOSResolver..cctor () [0x001ec] in Z:\tmp\tmp.UqmC3NoJVN\third_party\unity\unity_jar_resolver\source\IOSResolver\src\IOSResolver.cs:689 
+Rethrow as TypeInitializationException: The type initializer for 'Google.IOSResolver' threw an exception.
+  at (wrapper managed-to-native) System.Reflection.MonoCMethod.InternalInvoke(System.Reflection.MonoCMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoCMethod.InternalInvoke (System.Object obj, System.Object[] parameters) [0x00002] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+Rethrow as TargetInvocationException: Exception has been thrown by the target of an invocation.
+  at System.Reflection.MonoCMethod.InternalInvoke (System.Object obj, System.Object[] parameters) [0x00014] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.RuntimeType.CreateInstanceMono (System.Boolean nonPublic) [0x000a8] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.RuntimeType.CreateInstanceSlow (System.Boolean publicOnly, System.Boolean skipCheckThis, System.Boolean fillCache, System.Threading.StackCrawlMark& stackMark) [0x00009] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.RuntimeType.CreateInstanceDefaultCtor (System.Boolean publicOnly, System.Boolean skipCheckThis, System.Boolean fillCache, System.Threading.StackCrawlMark& stackMark) [0x00027] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Activator.CreateInstance (System.Type type, System.Boolean nonPublic) [0x00020] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Activator.CreateInstance (System.Type type) [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at UnityEditor.AssetPostprocessingInternal.GetSpeedTreeProcessorsHashString () [0x00035] in <50f55621a2ca4f31a35283e2979a8bf5>:0 
+UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+UnityEngine.Logger:LogException(Exception, Object)
+UnityEngine.Debug:LogException(Exception)
+UnityEditor.AssetPostprocessingInternal:GetSpeedTreeProcessorsHashString()
+
+IOException: Sharing violation on path D:\GitHub\Snakes-And-Ladders-2.0\ProjectSettings\GvhProjectSettings.xml
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options, System.String msgPath, System.Boolean bFromProxy, System.Boolean useLongPath, System.Boolean checkHost) [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions,string,bool,bool,bool)
+  at System.IO.StreamReader..ctor (System.String path, System.Text.Encoding encoding, System.Boolean detectEncodingFromByteOrderMarks, System.Int32 bufferSize, System.Boolean checkHost) [0x00067] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.IO.StreamReader..ctor (System.String path, System.Text.Encoding encoding, System.Boolean detectEncodingFromByteOrderMarks, System.Int32 bufferSize) [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.IO.StreamReader..ctor (System.String path, System.Boolean detectEncodingFromByteOrderMarks) [0x0000d] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.IO.StreamReader..ctor (System.String path) [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamReader..ctor(string)
+  at Google.XmlUtilities.ParseXmlTextFileElements (System.String filename, Google.Logger logger, Google.XmlUtilities+ParseElement parseElement) [0x0000f] in Z:\tmp\tmp.4VZkA25lCS\third_party\unity\unity_jar_resolver\source\VersionHandlerImpl\src\XmlUtilities.cs:104 
+  at Google.ProjectSettings.Load () [0x00012] in Z:\tmp\tmp.4VZkA25lCS\third_party\unity\unity_jar_resolver\source\VersionHandlerImpl\src\ProjectSettings.cs:776 
+  at Google.ProjectSettings.LoadIfEmpty () [0x0001b] in Z:\tmp\tmp.4VZkA25lCS\third_party\unity\unity_jar_resolver\source\VersionHandlerImpl\src\ProjectSettings.cs:557 
+  at Google.ProjectSettings.GetBool (System.String name, System.Boolean defaultValue, Google.SettingsLocation location) [0x0002b] in Z:\tmp\tmp.4VZkA25lCS\third_party\unity\unity_jar_resolver\source\VersionHandlerImpl\src\ProjectSettings.cs:605 
+  at Google.ProjectSettings.GetBool (System.String name, System.Boolean defaultValue) [0x00000] in Z:\tmp\tmp.4VZkA25lCS\third_party\unity\unity_jar_resolver\source\VersionHandlerImpl\src\ProjectSettings.cs:618 
+  at Google.IOSResolver.get_VerboseLoggingEnabled () [0x00000] in Z:\tmp\tmp.UqmC3NoJVN\third_party\unity\unity_jar_resolver\source\IOSResolver\src\IOSResolver.cs:984 
+  at Google.IOSResolver..cctor () [0x001ec] in Z:\tmp\tmp.UqmC3NoJVN\third_party\unity\unity_jar_resolver\source\IOSResolver\src\IOSResolver.cs:689 
+Rethrow as TypeInitializationException: The type initializer for 'Google.IOSResolver' threw an exception.
+  at (wrapper managed-to-native) System.Reflection.MonoCMethod.InternalInvoke(System.Reflection.MonoCMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoCMethod.InternalInvoke (System.Object obj, System.Object[] parameters) [0x00002] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+Rethrow as TargetInvocationException: Exception has been thrown by the target of an invocation.
+  at System.Reflection.MonoCMethod.InternalInvoke (System.Object obj, System.Object[] parameters) [0x00014] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.RuntimeType.CreateInstanceMono (System.Boolean nonPublic) [0x000a8] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.RuntimeType.CreateInstanceSlow (System.Boolean publicOnly, System.Boolean skipCheckThis, System.Boolean fillCache, System.Threading.StackCrawlMark& stackMark) [0x00009] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.RuntimeType.CreateInstanceDefaultCtor (System.Boolean publicOnly, System.Boolean skipCheckThis, System.Boolean fillCache, System.Threading.StackCrawlMark& stackMark) [0x00027] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Activator.CreateInstance (System.Type type, System.Boolean nonPublic) [0x00020] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Activator.CreateInstance (System.Type type) [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at UnityEditor.AssetPostprocessingInternal.GetPrefabProcessorsHashString () [0x00035] in <50f55621a2ca4f31a35283e2979a8bf5>:0 
+UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+UnityEngine.Logger:LogException(Exception, Object)
+UnityEngine.Debug:LogException(Exception)
+UnityEditor.AssetPostprocessingInternal:GetPrefabProcessorsHashString()
+
+- Completed reload, in  1.370 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.83 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2408 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 108.8 MB.
+System memory in use after: 109.0 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 2909.
+Total: 3.120100 ms (FindLiveObjects: 0.307400 ms CreateObjectMapping: 0.157300 ms MarkObjects: 2.608700 ms  DeleteObjects: 0.044600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.027806 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.035 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.85 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2408 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 108.8 MB.
+System memory in use after: 109.0 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 2912.
+Total: 3.645500 ms (FindLiveObjects: 0.352500 ms CreateObjectMapping: 0.198000 ms MarkObjects: 3.033100 ms  DeleteObjects: 0.059300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013592 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.00 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.467 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.96 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2408 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 108.8 MB.
+System memory in use after: 109.0 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 2915.
+Total: 3.407600 ms (FindLiveObjects: 0.401700 ms CreateObjectMapping: 0.167000 ms MarkObjects: 2.789500 ms  DeleteObjects: 0.047600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.028431 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.21 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.045 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.27 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2408 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 108.7 MB.
+System memory in use after: 108.9 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 2918.
+Total: 4.208500 ms (FindLiveObjects: 0.585400 ms CreateObjectMapping: 0.305000 ms MarkObjects: 3.251900 ms  DeleteObjects: 0.063400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.026328 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.12 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.475 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.01 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2408 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 108.8 MB.
+System memory in use after: 109.0 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 2921.
+Total: 3.734300 ms (FindLiveObjects: 0.351300 ms CreateObjectMapping: 0.186600 ms MarkObjects: 3.141500 ms  DeleteObjects: 0.053000 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 70.926091 seconds.
-  path: Assets/Scripts/MainMenu.cs
-  artifactKey: Guid(bf4fa8fbdc09f514aa8d857dd456df4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu.cs using Guid(bf4fa8fbdc09f514aa8d857dd456df4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23067ffc394d82c304e781f6397a95a1') in 0.005644 seconds
-  Import took 0.042892 seconds .
+  Time since last request: 755.751869 seconds.
+  path: Assets/Scripts/GameAuthenticationLogic.cs
+  artifactKey: Guid(83ec6d9927d5c404691a3bbc2887e825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameAuthenticationLogic.cs using Guid(83ec6d9927d5c404691a3bbc2887e825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1082860c7bdbc63b08b49891da465b24') in 0.010272 seconds
+  Import took 0.085132 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.050065 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.39 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.660 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.02 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2408 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 108.8 MB.
+System memory in use after: 109.1 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 2924.
+Total: 5.657300 ms (FindLiveObjects: 0.454500 ms CreateObjectMapping: 0.291300 ms MarkObjects: 4.811500 ms  DeleteObjects: 0.096300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.024917 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.33 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.990 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.09 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2408 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 108.8 MB.
+System memory in use after: 109.1 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 2927.
+Total: 4.590800 ms (FindLiveObjects: 0.350500 ms CreateObjectMapping: 0.172400 ms MarkObjects: 4.019400 ms  DeleteObjects: 0.046500 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 23.919382 seconds.
-  path: Assets/Scripts/Player1Piece.cs
-  artifactKey: Guid(816f57e6d29237a4b8b4732d8a1df3a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Player1Piece.cs using Guid(816f57e6d29237a4b8b4732d8a1df3a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1482394b38de9cadc6519b56145613df') in 0.007769 seconds
-  Import took 0.075483 seconds .
+  Time since last request: 137.075809 seconds.
+  path: Assets/Scripts/GameAuthenticationLogic.cs
+  artifactKey: Guid(83ec6d9927d5c404691a3bbc2887e825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameAuthenticationLogic.cs using Guid(83ec6d9927d5c404691a3bbc2887e825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9653cd7c74926c5ba43b53a6138845ca') in 0.012916 seconds
+  Import took 0.057945 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.022029 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.88 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.452 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.93 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2408 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 108.8 MB.
+System memory in use after: 109.1 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 2930.
+Total: 3.682400 ms (FindLiveObjects: 0.418700 ms CreateObjectMapping: 0.241400 ms MarkObjects: 2.961800 ms  DeleteObjects: 0.057300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.014860 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.95 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.638 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.30 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2408 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 108.8 MB.
+System memory in use after: 109.0 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 2933.
+Total: 3.336400 ms (FindLiveObjects: 0.400000 ms CreateObjectMapping: 0.184200 ms MarkObjects: 2.709100 ms  DeleteObjects: 0.040900 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.028207 seconds.
-  path: Assets/Scripts/Player1Piece.cs
-  artifactKey: Guid(816f57e6d29237a4b8b4732d8a1df3a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Player1Piece.cs using Guid(816f57e6d29237a4b8b4732d8a1df3a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1482394b38de9cadc6519b56145613df') in 0.005657 seconds
-  Import took 0.012045 seconds .
+  Time since last request: 323.536650 seconds.
+  path: Assets/Scripts/GameAuthenticationLogic.cs
+  artifactKey: Guid(83ec6d9927d5c404691a3bbc2887e825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameAuthenticationLogic.cs using Guid(83ec6d9927d5c404691a3bbc2887e825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a3eb92c96953885a6bb0f6b536b75ea') in 0.019487 seconds
+  Import took 0.062074 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.020361 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.18 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.287 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2408 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 108.9 MB.
+System memory in use after: 109.1 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 2936.
+Total: 2.496300 ms (FindLiveObjects: 0.359300 ms CreateObjectMapping: 0.141700 ms MarkObjects: 1.965200 ms  DeleteObjects: 0.028700 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.127667 seconds.
-  path: Assets/Scripts/StateManager.cs
-  artifactKey: Guid(856575ef55fd4464c8e1dd3792bf247e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/StateManager.cs using Guid(856575ef55fd4464c8e1dd3792bf247e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fd56cfd2da98ece9a6ad5f00b1df8e1') in 0.006547 seconds
-  Import took 0.049849 seconds .
+  Time since last request: 120.027504 seconds.
+  path: Assets/Scripts/GameAuthenticationLogic.cs
+  artifactKey: Guid(83ec6d9927d5c404691a3bbc2887e825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameAuthenticationLogic.cs using Guid(83ec6d9927d5c404691a3bbc2887e825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a98cec38052e6f2156c4bb6f6ea4dc4') in 0.009039 seconds
+  Import took 0.071437 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.019082 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.336 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.68 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2408 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 108.9 MB.
+System memory in use after: 109.1 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 2939.
+Total: 2.958200 ms (FindLiveObjects: 0.374500 ms CreateObjectMapping: 0.158000 ms MarkObjects: 2.376000 ms  DeleteObjects: 0.048400 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 51.979279 seconds.
-  path: Assets/Scripts/WinnerText.cs
-  artifactKey: Guid(fe73008576428ee4c9f70af9b850287a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/WinnerText.cs using Guid(fe73008576428ee4c9f70af9b850287a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfd4f3ac31540237444a2058985dcef8') in 0.006942 seconds
-  Import took 0.053329 seconds .
+  Time since last request: 111.544141 seconds.
+  path: Assets/Scripts/GameAuthenticationLogic.cs
+  artifactKey: Guid(83ec6d9927d5c404691a3bbc2887e825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameAuthenticationLogic.cs using Guid(83ec6d9927d5c404691a3bbc2887e825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2690cb144c3c202ee5eae5208090feb') in 0.006170 seconds
+  Import took 0.054789 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.051858 seconds.
-  path: Assets/Scripts/WinningMenu.cs
-  artifactKey: Guid(7812878719ad2b342b911fb847551fd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/WinningMenu.cs using Guid(7812878719ad2b342b911fb847551fd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92b15bafe7c32a66b8bb048ba013bf00') in 0.056206 seconds
-  Import took 0.086459 seconds .
+  Time since last request: 423.191732 seconds.
+  path: Assets/Scripts/DesDateFromFirebaseXXX.cs
+  artifactKey: Guid(eac82548df7e7ac48a145a023ca57800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DesDateFromFirebaseXXX.cs using Guid(eac82548df7e7ac48a145a023ca57800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3e979e5fd9322af375c0842d92364cd') in 0.006851 seconds
+  Import took 0.051331 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012825 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.87 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.235 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2409 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 108.9 MB.
+System memory in use after: 109.1 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 2943.
+Total: 2.670600 ms (FindLiveObjects: 0.314600 ms CreateObjectMapping: 0.117900 ms MarkObjects: 2.202100 ms  DeleteObjects: 0.034600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012842 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.059 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2409 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 108.9 MB.
+System memory in use after: 109.1 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 2946.
+Total: 2.877800 ms (FindLiveObjects: 0.400300 ms CreateObjectMapping: 0.161900 ms MarkObjects: 2.251800 ms  DeleteObjects: 0.062100 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 58.735984 seconds.
+  Time since last request: 373.540719 seconds.
+  path: Assets/Scripts/DesDateFromFirebaseXXX.cs
+  artifactKey: Guid(eac82548df7e7ac48a145a023ca57800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DesDateFromFirebaseXXX.cs using Guid(eac82548df7e7ac48a145a023ca57800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ddba5b7e246c18a71242fe1dca929c4') in 0.006888 seconds
+  Import took 0.079984 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013198 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.70 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.096 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2409 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 108.8 MB.
+System memory in use after: 109.0 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 2949.
+Total: 3.168300 ms (FindLiveObjects: 0.297600 ms CreateObjectMapping: 0.164700 ms MarkObjects: 2.627500 ms  DeleteObjects: 0.077000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 272.307596 seconds.
   path: Assets/Scripts/UserModelClass.cs
   artifactKey: Guid(2ff09f6d01f77924fb40bce3d44af3ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/UserModelClass.cs using Guid(2ff09f6d01f77924fb40bce3d44af3ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a37fffe46c7b7e56c1d69d3dadb7576f') in 0.007276 seconds
-  Import took 0.057275 seconds .
+Start importing Assets/Scripts/UserModelClass.cs using Guid(2ff09f6d01f77924fb40bce3d44af3ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ab73e76e9533ef6abc6742bd3a977c7') in 0.007214 seconds
+  Import took 0.077983 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013349 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.26 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.089 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2409 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 108.9 MB.
+System memory in use after: 109.1 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 2952.
+Total: 2.886500 ms (FindLiveObjects: 0.308300 ms CreateObjectMapping: 0.142700 ms MarkObjects: 2.368300 ms  DeleteObjects: 0.065500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013647 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.069 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2409 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 108.9 MB.
+System memory in use after: 109.1 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 2955.
+Total: 3.330000 ms (FindLiveObjects: 0.594100 ms CreateObjectMapping: 0.269900 ms MarkObjects: 2.406500 ms  DeleteObjects: 0.056500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013782 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.166 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2409 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 108.9 MB.
+System memory in use after: 109.1 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 2958.
+Total: 3.270700 ms (FindLiveObjects: 0.372700 ms CreateObjectMapping: 0.160300 ms MarkObjects: 2.690600 ms  DeleteObjects: 0.045000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012803 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.86 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.080 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2409 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 108.9 MB.
+System memory in use after: 109.1 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 2961.
+Total: 2.888400 ms (FindLiveObjects: 0.314700 ms CreateObjectMapping: 0.142100 ms MarkObjects: 2.367200 ms  DeleteObjects: 0.063100 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 35.792340 seconds.
-  path: Assets/Scripts/CurrentPlayerDisplay.cs
-  artifactKey: Guid(00fea901efb2d4840a8b2a2a14435218) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/CurrentPlayerDisplay.cs using Guid(00fea901efb2d4840a8b2a2a14435218) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3bab0968fc99750719f6ba4281e25ca') in 0.005936 seconds
-  Import took 0.045191 seconds .
+  Time since last request: 1161.918278 seconds.
+  path: Assets/Scripts/UserModelClass.cs
+  artifactKey: Guid(2ff09f6d01f77924fb40bce3d44af3ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/UserModelClass.cs using Guid(2ff09f6d01f77924fb40bce3d44af3ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c08771cce216747eff5b3c3a0fa43ee') in 0.016975 seconds
+  Import took 0.088903 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.849181 seconds.
+  path: Assets/Scripts/DesDateFromFirebaseXXX.cs
+  artifactKey: Guid(eac82548df7e7ac48a145a023ca57800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DesDateFromFirebaseXXX.cs using Guid(eac82548df7e7ac48a145a023ca57800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b52f863d1659d1386a3dfbfd3999df83') in 0.004602 seconds
+  Import took 0.046167 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012824 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.28 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.083 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2409 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 108.8 MB.
+System memory in use after: 109.0 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 2964.
+Total: 2.661500 ms (FindLiveObjects: 0.376900 ms CreateObjectMapping: 0.156500 ms MarkObjects: 2.074600 ms  DeleteObjects: 0.052400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.920356 seconds.
+  path: Assets/Scripts/DesDateFromFirebaseXXX.cs
+  artifactKey: Guid(eac82548df7e7ac48a145a023ca57800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DesDateFromFirebaseXXX.cs using Guid(eac82548df7e7ac48a145a023ca57800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7d3d0e102bb8146d00acc5894ff768b') in 0.007224 seconds
+  Import took 0.080445 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.014806 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.074 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.67 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2408 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 108.9 MB.
+System memory in use after: 109.1 MB.
+
+Unloading 43 unused Assets to reduce memory usage. Loaded Objects now: 2966.
+Total: 3.153000 ms (FindLiveObjects: 0.486600 ms CreateObjectMapping: 0.202400 ms MarkObjects: 2.402300 ms  DeleteObjects: 0.059300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 377.817423 seconds.
+  path: Assets/Scripts/PlayerDemandsHere.cs
+  artifactKey: Guid(15a350041421265448218bccccfe36ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerDemandsHere.cs using Guid(15a350041421265448218bccccfe36ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ec2c9eec1098d04dd926c6bbb73dd29') in 0.013722 seconds
+  Import took 0.057423 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013126 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.71 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.130 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.68 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2409 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 108.9 MB.
+System memory in use after: 109.2 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 2970.
+Total: 2.765400 ms (FindLiveObjects: 0.329300 ms CreateObjectMapping: 0.133400 ms MarkObjects: 2.269800 ms  DeleteObjects: 0.031400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.781915 seconds.
+  path: Assets/Scripts/Player1Details.cs
+  artifactKey: Guid(490dd84d67c114848bb942c8ba37e065) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player1Details.cs using Guid(490dd84d67c114848bb942c8ba37e065) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98619b3c5ff8ef9c301ba05fe20707bc') in 0.009324 seconds
+  Import took 0.070318 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.196654 seconds.
+  path: Assets/Scripts/Player2Details.cs
+  artifactKey: Guid(1474f31aae3f91c4d8e4d6408752e507) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player2Details.cs using Guid(1474f31aae3f91c4d8e4d6408752e507) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a0177f3031ab493dd1ad3c96209ee64') in 0.005580 seconds
+  Import took 0.027379 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007646 seconds.
+  path: Assets/Scripts/Player2Details.cs
+  artifactKey: Guid(1474f31aae3f91c4d8e4d6408752e507) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player2Details.cs using Guid(1474f31aae3f91c4d8e4d6408752e507) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a0177f3031ab493dd1ad3c96209ee64') in 0.005622 seconds
+  Import took 0.010169 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013854 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.95 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.147 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2408 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 108.9 MB.
+System memory in use after: 109.1 MB.
+
+Unloading 43 unused Assets to reduce memory usage. Loaded Objects now: 2972.
+Total: 3.081200 ms (FindLiveObjects: 0.386200 ms CreateObjectMapping: 0.228700 ms MarkObjects: 2.429500 ms  DeleteObjects: 0.034600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 45.600922 seconds.
+  path: Assets/Scripts/GameAuthenticationLogic.cs
+  artifactKey: Guid(83ec6d9927d5c404691a3bbc2887e825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameAuthenticationLogic.cs using Guid(83ec6d9927d5c404691a3bbc2887e825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dfff21e22e1b282fc6a39bc5610fb15') in 0.009065 seconds
+  Import took 0.013653 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.017990 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.70 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.099 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.70 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2408 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 108.9 MB.
+System memory in use after: 109.1 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 2975.
+Total: 2.767800 ms (FindLiveObjects: 0.297900 ms CreateObjectMapping: 0.151000 ms MarkObjects: 2.259600 ms  DeleteObjects: 0.057100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 672.432605 seconds.
+  path: Assets/Scripts/GameAuthenticationLogic.cs
+  artifactKey: Guid(83ec6d9927d5c404691a3bbc2887e825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameAuthenticationLogic.cs using Guid(83ec6d9927d5c404691a3bbc2887e825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd055fcb1544a8631e8e88a848dbca469') in 0.007638 seconds
+  Import took 0.213073 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013761 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.01 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.190 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2408 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 108.8 MB.
+System memory in use after: 109.1 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 2978.
+Total: 2.953300 ms (FindLiveObjects: 0.513900 ms CreateObjectMapping: 0.201500 ms MarkObjects: 2.202900 ms  DeleteObjects: 0.033700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 238.407912 seconds.
+  path: Assets/Scripts/GameAuthenticationLogic.cs
+  artifactKey: Guid(83ec6d9927d5c404691a3bbc2887e825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameAuthenticationLogic.cs using Guid(83ec6d9927d5c404691a3bbc2887e825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f77c4bf9c5d3d330c02cd13d852dedd9') in 0.007135 seconds
+  Import took 0.011374 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.015677 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.058 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.68 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2408 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 108.9 MB.
+System memory in use after: 109.2 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 2981.
+Total: 4.115800 ms (FindLiveObjects: 0.492100 ms CreateObjectMapping: 0.330000 ms MarkObjects: 3.224400 ms  DeleteObjects: 0.066900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.014821 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.85 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.176 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2408 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 108.9 MB.
+System memory in use after: 109.2 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 2984.
+Total: 2.749800 ms (FindLiveObjects: 0.315900 ms CreateObjectMapping: 0.176300 ms MarkObjects: 2.219800 ms  DeleteObjects: 0.035900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 183.219015 seconds.
+  path: Assets/Scripts/GameAuthenticationLogic.cs
+  artifactKey: Guid(83ec6d9927d5c404691a3bbc2887e825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameAuthenticationLogic.cs using Guid(83ec6d9927d5c404691a3bbc2887e825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fdd6d085e2b5a65a61c2848b57179a8') in 0.008366 seconds
+  Import took 0.200657 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005574 seconds.
+  path: Assets/Scripts/GameAuthenticationLogic.cs
+  artifactKey: Guid(83ec6d9927d5c404691a3bbc2887e825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameAuthenticationLogic.cs using Guid(83ec6d9927d5c404691a3bbc2887e825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fdd6d085e2b5a65a61c2848b57179a8') in 0.009066 seconds
+  Import took 0.014455 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.021687 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.47 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.194 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.01 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2408 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 108.9 MB.
+System memory in use after: 109.2 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 2987.
+Total: 4.608100 ms (FindLiveObjects: 0.387100 ms CreateObjectMapping: 0.193500 ms MarkObjects: 3.959000 ms  DeleteObjects: 0.066400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 126.362064 seconds.
+  path: Assets/Scripts/GameAuthenticationLogic.cs
+  artifactKey: Guid(83ec6d9927d5c404691a3bbc2887e825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameAuthenticationLogic.cs using Guid(83ec6d9927d5c404691a3bbc2887e825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4269742a3943508313a2791c8a7432fa') in 0.014028 seconds
+  Import took 0.036487 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.014773 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.091 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2408 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 108.9 MB.
+System memory in use after: 109.2 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 2990.
+Total: 2.639100 ms (FindLiveObjects: 0.303200 ms CreateObjectMapping: 0.134900 ms MarkObjects: 2.163300 ms  DeleteObjects: 0.036100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 67.979022 seconds.
+  path: Assets/Scripts/GameAuthenticationLogic.cs
+  artifactKey: Guid(83ec6d9927d5c404691a3bbc2887e825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameAuthenticationLogic.cs using Guid(83ec6d9927d5c404691a3bbc2887e825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b944cc90b91832103c8d00c9e5bc8d54') in 0.007467 seconds
+  Import took 0.116139 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.015891 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.68 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.075 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.90 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2408 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 108.9 MB.
+System memory in use after: 109.1 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 2993.
+Total: 3.033900 ms (FindLiveObjects: 0.352300 ms CreateObjectMapping: 0.155000 ms MarkObjects: 2.491500 ms  DeleteObjects: 0.033700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.014399 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.67 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.027 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.71 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2408 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 109.0 MB.
+System memory in use after: 109.2 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 2996.
+Total: 2.505700 ms (FindLiveObjects: 0.293900 ms CreateObjectMapping: 0.130900 ms MarkObjects: 2.014400 ms  DeleteObjects: 0.065200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012500 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.993 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2408 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 109.0 MB.
+System memory in use after: 109.2 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 2999.
+Total: 3.129200 ms (FindLiveObjects: 0.368900 ms CreateObjectMapping: 0.141000 ms MarkObjects: 2.586900 ms  DeleteObjects: 0.031300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013924 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.96 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.028 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2408 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 109.0 MB.
+System memory in use after: 109.2 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 3002.
+Total: 2.894700 ms (FindLiveObjects: 0.302800 ms CreateObjectMapping: 0.137100 ms MarkObjects: 2.423800 ms  DeleteObjects: 0.029400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013029 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.073 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.91 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2408 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 109.0 MB.
+System memory in use after: 109.2 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 3005.
+Total: 3.087600 ms (FindLiveObjects: 0.537900 ms CreateObjectMapping: 0.193700 ms MarkObjects: 2.314700 ms  DeleteObjects: 0.039900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.015192 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.85 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.977 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2408 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 108.9 MB.
+System memory in use after: 109.1 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 3008.
+Total: 2.608600 ms (FindLiveObjects: 0.333700 ms CreateObjectMapping: 0.160100 ms MarkObjects: 2.080500 ms  DeleteObjects: 0.032400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1281.343836 seconds.
+  path: Assets/Scripts/GameAuthenticationLogic.cs
+  artifactKey: Guid(83ec6d9927d5c404691a3bbc2887e825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameAuthenticationLogic.cs using Guid(83ec6d9927d5c404691a3bbc2887e825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b467fb2cde898e19552f5d10a177f2a') in 0.009045 seconds
+  Import took 0.304358 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012888 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.066 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.70 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2408 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 109.0 MB.
+System memory in use after: 109.2 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 3011.
+Total: 2.660400 ms (FindLiveObjects: 0.364100 ms CreateObjectMapping: 0.196200 ms MarkObjects: 2.070000 ms  DeleteObjects: 0.028500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 86.298179 seconds.
+  path: Assets/Scripts/GameAuthenticationLogic.cs
+  artifactKey: Guid(83ec6d9927d5c404691a3bbc2887e825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameAuthenticationLogic.cs using Guid(83ec6d9927d5c404691a3bbc2887e825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17c56fe096b8ecc33870d7e45d90214a') in 0.006727 seconds
+  Import took 0.036211 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013311 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.38 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.052 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2408 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 109.0 MB.
+System memory in use after: 109.2 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 3014.
+Total: 3.417700 ms (FindLiveObjects: 0.797900 ms CreateObjectMapping: 0.148800 ms MarkObjects: 2.417800 ms  DeleteObjects: 0.052000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013782 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.093 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.71 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2408 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 109.0 MB.
+System memory in use after: 109.2 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 3017.
+Total: 2.853300 ms (FindLiveObjects: 0.312300 ms CreateObjectMapping: 0.117800 ms MarkObjects: 2.361800 ms  DeleteObjects: 0.060000 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

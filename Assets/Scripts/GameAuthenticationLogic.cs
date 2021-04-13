@@ -107,8 +107,30 @@ public class GameAuthenticationLogic : MonoBehaviour
                    Debug.Log("Hello Rooms");
 
                });
+             
 
               });
           });
     }
+
 }
+
+
+//update PlayerMove
+/*
+void updatePlayerMover(bool player1Move, bool player2Move)
+{
+
+    Dictionary<string, object> updates = new Dictionary<string, object>
+                        {
+                            { "player1Move",  player1Move},
+                            {"player2Move",player2Move }
+                        };
+
+
+    _refrence.Collection("Room").Document(useridXXXX + player2iD)
+    .UpdateAsync(updates).ContinueWith(task => { Debug.Log("Update Moves"); });
+}
+*/
+
+
