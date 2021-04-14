@@ -1,8 +1,7 @@
 using Firebase.Firestore;
 
 [FirestoreData]
-public class RoomsDataXXXX
-{   
+public class RoomsDataXXXX {   
     [FirestoreProperty]
     public string player1Uid { get; set; }
     [FirestoreProperty]

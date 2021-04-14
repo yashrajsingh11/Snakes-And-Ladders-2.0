@@ -21,39 +21,28 @@ public class Player1Piece : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
+        
         if(theStateManager.IsDoneRolling == false || theStateManager.HasToChoose == true) {
             return;
         }
         
         if(theStateManager.CurrentPlayerId == 0) {     
-        
             int spacesToMove = theStateManager.diceValue;
             Tile finalTile = currentTile;
-        
             for(int i = 0; i < spacesToMove; i++) {
-                
                 if(finalTile == null) {
-            
                     finalTile = StartingTile;
-            
-                } else {
-                
+                } else {               
                     if(finalTile.NextTiles == null || finalTile.NextTiles.Length == 0) {
                         theStateManager.isGameOver = true;
                         Debug.Log("Player 1 Won!!");
                         Destroy(gameObject);
-                        return;
-                
-                    } else {
-                
-                        finalTile = finalTile.NextTiles[0];
-            
-                    }
-        
+                        return;                
+                    } else {                
+                        finalTile = finalTile.NextTiles[0];            
+                    }        
                 }
-
             }
-        
             if(finalTile == null) {
                 return;
             }

@@ -20,39 +20,28 @@ public class Player2Piece : MonoBehaviour {
     PromptText thePromptText;
     // Update is called once per frame
     void Update() {
+
         if(theStateManager.IsDoneRolling == false || theStateManager.HasToChoose == true) {
             return;
         }
     
-    	if(theStateManager.CurrentPlayerId == 1) {    
-    
+    	if(theStateManager.CurrentPlayerId == 1) {       
 	        int spacesToMove = theStateManager.diceValue;
-    	    Tile finalTile = currentTile;
-        	
-        	for(int i = 0; i < spacesToMove; i++) {
-            
-	            if(finalTile == null) {
-            
-    	            finalTile = StartingTile;
-            
-        	    } else {
-                
+    	    Tile finalTile = currentTile;        	
+        	for(int i = 0; i < spacesToMove; i++) {            
+	            if(finalTile == null) {            
+    	            finalTile = StartingTile;            
+        	    } else {                
             	    if(finalTile.NextTiles == null || finalTile.NextTiles.Length == 0) {
                         theStateManager.isGameOver = true;
                         Debug.Log("Player 2 Won!!");
                     	Destroy(gameObject);
-                	    return;
-                
-                	} else {
-                
-                		finalTile = finalTile.NextTiles[0];
-            
-                	}
-        
+                	    return;                
+                	} else {                
+                		finalTile = finalTile.NextTiles[0];            
+                	}        
             	}
-
-        	}
-        
+        	}        
         	if(finalTile == null) {
             	return;
         	}
@@ -148,7 +137,5 @@ public class Player2Piece : MonoBehaviour {
         	theStateManager.NewTurn();
 
     	}
-
 	}
-
 }

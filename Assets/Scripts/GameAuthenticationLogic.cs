@@ -7,11 +7,9 @@ using Firebase.Firestore;
 using System;
 using UnityEngine.SceneManagement;
 
-public class GameAuthenticationLogic : MonoBehaviour
-{
+public class GameAuthenticationLogic : MonoBehaviour {
     // Start is called before the first frame update
-    void Start()
-    {
+    void Start() {
 
     }
 
@@ -27,13 +25,10 @@ public class GameAuthenticationLogic : MonoBehaviour
     public List<UserDeserializeData> userDataAll = new List<UserDeserializeData>();
     public List<RoomsDataXXXX> roomInfromation = new List<RoomsDataXXXX>();
 
-
     // Update is called once per frame
-    void Update()
-    {
+    void Update() {
 
-        if (isConnectedToServer == true && isEveryonePresent == true && isInRoom == true)
-        {
+        if (isConnectedToServer == true && isEveryonePresent == true && isInRoom == true) {
             isConnectedToServer = false;
             isEveryonePresent = false;
             isInRoom = false;
@@ -46,118 +41,81 @@ public class GameAuthenticationLogic : MonoBehaviour
             Debug.Log("Game Start");
         }
 
-        if (player1inroom == true && ekAurBoolean == false)
-        {
+        if (player1inroom == true && ekAurBoolean == false) {
             FirebaseFirestore _refrence = FirebaseFirestore.DefaultInstance;
-            _refrence.Collection("Room").Document(useridXXXX).GetSnapshotAsync().ContinueWith(task =>
-            {
+            _refrence.Collection("Room").Document(useridXXXX).GetSnapshotAsync().ContinueWith(task => {
                 DocumentSnapshot snapshot = task.Result;
-                if (snapshot.Exists)
-                {
+                
+                if (snapshot.Exists) {
                     Dictionary<string, object> cxxxxxity = snapshot.ToDictionary();
-                    foreach (KeyValuePair<string, object> pair in cxxxxxity)
-                    {
+                    foreach (KeyValuePair<string, object> pair in cxxxxxity) {
                         if (pair.Key == "allOk" && bool.Parse(pair.Value.ToString()) == true)
                         ekAurBoolean = true;
                         Debug.Log(String.Format("{0}: {1}", pair.Key, pair.Value));
                         break;
                     }
                 }
-                else
-                {
-                   // Debug.Log(String.Format("Document {0} does not exist!", snapshot.Id));
-                }
             });
-
-
-            // searchForRooms();
-            // Debug.Log("waiting for other user");
-            // if(roomInfromation.Exists(element => element.player2Uid == player2iD)) {
-            //     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            //     Debug.Log("Game Start");
-            // }
         }
 
-        if (roomSearched == true)
-        {
-            if (roomInfromation.Count == 0)
-            {
+        if (roomSearched == true) {
+            if (roomInfromation.Count == 0) {
                 createARooom();
             }
             roomSearched = false;
         }
 
-        if (secondPlayerAdded == true)
-        {
-            // Debug.Log(useridXXXX);
-            // Debug.Log(player2iD);
+        if (secondPlayerAdded == true) {
             isEveryonePresent = true;
             secondPlayerAdded = false;
         }
 
-        if (isConnectedToServer == true && isEveryonePresent == false && isInRoom == false)
-        {
+        if (isConnectedToServer == true && isEveryonePresent == false && isInRoom == false) {
             FirebaseFirestore _refrence = FirebaseFirestore.DefaultInstance;
 
-            for (int i = 0; i < userDataAll.Count; i++)
-            {
-                //Player 1 and Player 2
+            for (int i = 0; i < userDataAll.Count; i++) {
                 abc();
-                if (userDataAll[i].isOnline && userDataAll[i].uid != useridXXXX && userDataAll.Count > 1)
-                {
+                if (userDataAll[i].isOnline && userDataAll[i].uid != useridXXXX && userDataAll.Count > 1) {
                     player2iD = userDataAll[i].uid;
                     Debug.Log(player2iD);
 
-                    if (!roomInfromation.Exists(element => element.player2Uid == player2iD) || roomInfromation.Exists(element => String.IsNullOrEmpty(element.player2Uid)))
-                    {
-
+                    if (!roomInfromation.Exists(element => element.player2Uid == player2iD) || roomInfromation.Exists(element => String.IsNullOrEmpty(element.player2Uid))) {
                         Debug.Log("hello");
                         Dictionary<string, object> asufs = new Dictionary<string, object>{
                             {"player2Uid", useridXXXX},
                             {"allOk",true},
                         };
-                        _refrence.Collection("Room").Document(player2iD).UpdateAsync(asufs).ContinueWith(task =>
-                        {
+                        _refrence.Collection("Room").Document(player2iD).UpdateAsync(asufs).ContinueWith(task => {
                             Debug.Log("Second UserAdded to First User Room ");
                             secondPlayerAdded = true;
-                            ///Game Begin.
                         });
                         isInRoom = true;
                     }
                     break;
                 }
-                //  else {
-
-                //     Debug.Log("Waiting for second user");
-                // }
             }
         }
     }
-    //new Code
-    public void createARooom()
-    {
+
+    public void createARooom() {
+
         FirebaseFirestore _refrence = FirebaseFirestore.DefaultInstance;
         UserModelClassX userClassModel = new UserModelClassX(useridXXXX, true);
         _refrence.Collection("Room").Document(useridXXXX).SetAsync(userClassModel.toJsonRoomCreateXX(useridXXXX)
-        ).ContinueWith(task =>
-        {
+        ).ContinueWith(task => {
             Debug.Log("Entering room");
             player1inroom = true;
         });
-        //searchForRooms();
     }
-    public void searchForRooms()
-    {
+
+    public void searchForRooms() {
+        
         FirebaseFirestore _refrence = FirebaseFirestore.DefaultInstance;
-        _refrence.Collection("Room").GetSnapshotAsync().ContinueWith(task =>
-        {
+        _refrence.Collection("Room").GetSnapshotAsync().ContinueWith(task => {
             QuerySnapshot snapshot = task.Result;
-            foreach (DocumentSnapshot document in snapshot.Documents)
-            {
+            foreach (DocumentSnapshot document in snapshot.Documents) {
                 Dictionary<string, object> resultsHere = document.ToDictionary();
-                ///deserizz the data code
-                RoomsDataXXXX romxx = new RoomsDataXXXX
-                {
+                RoomsDataXXXX romxx = new RoomsDataXXXX {
                     player1Uid = resultsHere["player1Uid"].ToString(),
                     player2Uid = resultsHere["player2Uid"].ToString(),
                     player1Move = bool.Parse(resultsHere["player1Move"].ToString()),
@@ -170,23 +128,16 @@ public class GameAuthenticationLogic : MonoBehaviour
             roomSearched = true;
         });
     }
-    //
 
-    public void abc()
-    {
+    public void abc() {
 
         FirebaseFirestore _refrence = FirebaseFirestore.DefaultInstance;
-        if (userDataAll.Count <= 1 && !userDataAll.Exists(element => element.uid == useridXXXX))
-        {
-            _refrence.Collection("Users").GetSnapshotAsync().ContinueWith(task =>
-            {
+        if (userDataAll.Count <= 1 && !userDataAll.Exists(element => element.uid == useridXXXX)) {
+            _refrence.Collection("Users").GetSnapshotAsync().ContinueWith(task => {
                 QuerySnapshot snapshot = task.Result;
-                foreach (DocumentSnapshot document in snapshot.Documents)
-                {
+                foreach (DocumentSnapshot document in snapshot.Documents) {
                     Dictionary<string, object> resultsHere = document.ToDictionary();
-                    ///deserizz the data code
-                    UserDeserializeData dsData = new UserDeserializeData
-                    {
+                    UserDeserializeData dsData = new UserDeserializeData {
                         uid = resultsHere["uid"].ToString(),
                         isOnline = bool.Parse(resultsHere["isOnline"].ToString()),
                         dateTime = resultsHere["dateTime"].ToString(),
@@ -198,19 +149,15 @@ public class GameAuthenticationLogic : MonoBehaviour
         }
     }
 
-    public void loginAnno()
-    {
+    public void loginAnno() {
 
         Firebase.Auth.FirebaseAuth auth = Firebase.Auth.FirebaseAuth.DefaultInstance;
-        auth.SignInAnonymouslyAsync().ContinueWith(task =>
-        {
-            if (task.IsCanceled)
-            {
+        auth.SignInAnonymouslyAsync().ContinueWith(task => {
+            if (task.IsCanceled) {
                 Debug.LogError("SignInAnonymouslyAsync was canceled.");
                 return;
             }
-            if (task.IsFaulted)
-            {
+            if (task.IsFaulted) {
                 Debug.LogError("SignInAnonymouslyAsync encountered an error: " + task.Exception);
                 return;
             }
@@ -220,19 +167,15 @@ public class GameAuthenticationLogic : MonoBehaviour
         });
     }
 
-    public void addUserToDatabase()
-    {
+    public void addUserToDatabase() {
         FirebaseFirestore _refrence = FirebaseFirestore.DefaultInstance;
         UserModelClassX userClassModel = new UserModelClassX(useridXXXX, true);
-        _refrence.Collection("Users").Document(useridXXXX)
-            .SetAsync(userClassModel.toJsonX())
-            .ContinueWith(task =>
-            {
-                Debug.Log("Connected To Server");
-                isConnectedToServer = true;
-                abc();
-                searchForRooms();
-            });
+        _refrence.Collection("Users").Document(useridXXXX).SetAsync(userClassModel.toJsonX()).ContinueWith(task => {
+            Debug.Log("Connected To Server");
+            isConnectedToServer = true;
+            abc();
+            searchForRooms();
+        });
     }
 }
 

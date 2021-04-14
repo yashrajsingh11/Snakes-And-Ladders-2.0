@@ -3,11 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class WinnerText : MonoBehaviour
-{
+public class WinnerText : MonoBehaviour {
     // Start is called before the first frame update
-    void Start()
-    {
+    void Start() {
         theStateManager = GameObject.FindObjectOfType<StateManager>();
         myText = GetComponent<Text>();
     }
@@ -17,18 +15,14 @@ public class WinnerText : MonoBehaviour
     string[] numberWords = { "One", "Two" };
 
     // Update is called once per frame
-    void Update()
-    {
-        if(theStateManager.isGameOver == true)
-        {
+    void Update() {
+        if(theStateManager.isGameOver == true) {
             WinnerDisplay();
         }
     }
 
-    public void WinnerDisplay()
-    {
+    public void WinnerDisplay() {
 
         myText.text = "Conrats!! Player " + numberWords[theStateManager.CurrentPlayerId] + "\n You Won";
-
     }
 }

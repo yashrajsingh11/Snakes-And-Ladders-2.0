@@ -10,6 +10,7 @@ public class WinningMenu : MonoBehaviour {
         theStateManager = GameObject.FindObjectOfType<StateManager>();
         theWinnerText = GameObject.FindObjectOfType<WinnerText>();
     }
+    
     public static bool hasWon = false;
     public GameObject winMenu;
     StateManager theStateManager;

@@ -30,5 +30,4 @@ public class StateManager : MonoBehaviour {
     	IsDoneRolling = false;
     	CurrentPlayerId = (CurrentPlayerId + 1) % NumberOfPlayers;
     }
-
 }
