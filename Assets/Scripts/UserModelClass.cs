@@ -48,3 +48,45 @@ public class UserDeserializeData {
     [FirestoreProperty]
     public bool isOnline { get; set; }
 }
+
+[FirestoreData]
+public class UserMovesListData
+{
+    [FirestoreProperty]
+    public int player1Result { get; set; }
+
+    [FirestoreProperty]
+    public int player2Result { get; set; }
+
+    [FirestoreProperty]
+    public int player1DiceValue { get; set; }
+
+    [FirestoreProperty]
+    public int player2DiceValue { get; set; }
+
+    
+    [FirestoreProperty]
+    public int player1AXE { get; set; }
+
+    
+    [FirestoreProperty]
+    public int player2AXE { get; set; }
+
+    
+    [FirestoreProperty]
+    public int player1SnakeC { get; set; }
+
+    
+    [FirestoreProperty]
+    public int player2SnakeC { get; set; }
+
+
+
+    
+
+    [FirestoreProperty]
+    public bool player1Turn { get; set; }
+
+    [FirestoreProperty]
+    public bool player2Turn { get; set; }
+}
