@@ -32,7 +32,8 @@ public class UserModelClassX
         { "player2Uid", "" },
         { "player1Move", true },
         { "player2Move", false },
-        { "dateTime",DateTime.Now.ToString()}
+        { "dateTime",DateTime.Now.ToString()},
+        { "allOk",false}
     };
         return PlayersRoom;
     }
