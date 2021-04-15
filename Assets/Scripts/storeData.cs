@@ -15,7 +15,6 @@ public class storeData : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("abc" + player1uid);
-        Debug.Log("def" + player2uid);
+
     }
 }

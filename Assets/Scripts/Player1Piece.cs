@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 using Firebase.Firestore;
 using UnityEngine.UI;
 
@@ -167,9 +168,9 @@ public class Player1Piece : MonoBehaviour {
         Dictionary<string, object> updates = new Dictionary<string, object>
                         {
                             {"player1DiceValue",  player1DiceValue},
-                            {"player2DiceValue",  player1DiceValue},
+                            {"player2DiceValue",  player2DiceValue},
                             {"player1Result",player1Result},
-                            {"player2Result",player1Result},
+                            {"player2Result",player2Result},
                             {"player1AXE",player1AXE},
                             {"player2AXE",player2AXE},
                             {"player1SnakeC",player1SnakeC},
@@ -204,16 +205,15 @@ public class Player1Piece : MonoBehaviour {
                     player2AXE = Convert.ToInt32(aLLLData["player2AXE"].ToString()),
                     player1SnakeC = Convert.ToInt32(aLLLData["player1SnakeC"].ToString()),
                     player2SnakeC = Convert.ToInt32(aLLLData["player2SnakeC"].ToString()),
-                    player1uid = Convert.ToInt32(aLLLData["player1uid"].ToString()),
-                    player2uid = Convert.ToInt32(aLLLData["player2uid"].ToString()),
+                    player1uid = aLLLData["player1uid"].ToString(),
+                    player2uid = aLLLData["player2uid"].ToString(),
                 };
-                if(userMoves.Count > 1) {
-                    userMoves.Clear();
-                }
-                userMoves.Add(daata);
+                userMoves.Insert(0,daata);
             }
+            Debug.Log("Ran everytime");
             if(userMoves[0].player1Result != -1) {
                 userMoveChecked = true;
+                Debug.Log("ran after first time");
             }
         });
     }
