@@ -12,8 +12,9 @@ public class GameAuthenticationLogic : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        theStoreData = GameObject.FindObjectOfType<storeData>();
     }
+    storeData theStoreData;
 
     public bool isConnectedToServer = false;
     public bool isEveryonePresent = false;
@@ -38,6 +39,8 @@ public class GameAuthenticationLogic : MonoBehaviour
             isConnectedToServer = false;
             isEveryonePresent = false;
             isInRoom = false;
+            theStoreData.player1uid = useridXXXX;
+            theStoreData.player2uid = player2iD;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             Debug.Log("Game Start");
 
@@ -45,6 +48,8 @@ public class GameAuthenticationLogic : MonoBehaviour
 
         if (allVariablesSet == true)
         {
+            theStoreData.player1uid = useridXXXX;
+            theStoreData.player2uid = ekAurPlayer2id;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             Debug.Log("Game Start");
             allVariablesSet = false;
@@ -228,7 +233,7 @@ public class GameAuthenticationLogic : MonoBehaviour
     {
         FirebaseAuth _firebase = FirebaseAuth.DefaultInstance;
         Dictionary<string, object> userStab = new Dictionary<string, object>{
-        {"player1Result",0},
+        {"player1Result",-1},
         {"player2Result",0},
         {"player1DiceValue",0},
         {"player2DiceValue",0},
@@ -238,6 +243,8 @@ public class GameAuthenticationLogic : MonoBehaviour
         {"player2SnakeC",0},
         {"player1Turn",true},
         {"player2Turn",false},
+        {"player1uid",useridXXXX},
+        {"player2uid", ekAurPlayer2id}
     };
         if (_firebase.CurrentUser.UserId != secondUserUID)
         {

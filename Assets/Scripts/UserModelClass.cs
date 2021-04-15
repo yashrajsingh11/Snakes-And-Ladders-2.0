@@ -89,4 +89,10 @@ public class UserMovesListData
 
     [FirestoreProperty]
     public bool player2Turn { get; set; }
+
+    [FirestoreProperty]
+    public string player1uid { get; set; }
+
+    [FirestoreProperty]
+    public string player2uid { get; set; }
 }

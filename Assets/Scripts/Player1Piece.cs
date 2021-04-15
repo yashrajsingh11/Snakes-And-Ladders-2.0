@@ -1,6 +1,7 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Firebase.Firestore;
 using UnityEngine.UI;
 
 public class Player1Piece : MonoBehaviour {
@@ -9,6 +10,8 @@ public class Player1Piece : MonoBehaviour {
         theStateManager = GameObject.FindObjectOfType<StateManager>();
         theWinnerText = GameObject.FindObjectOfType<WinnerText>();
         thePromptText = GameObject.FindObjectOfType<PromptText>();
+        theStoreData = GameObject.FindObjectOfType<storeData>();
+        checkForUserMoves();
     }
 
     public Tile StartingTile;
@@ -16,18 +19,35 @@ public class Player1Piece : MonoBehaviour {
     public AudioClip moveFx;
     Tile currentTile;
     StateManager theStateManager;
+    storeData theStoreData;
     WinnerText theWinnerText;
     PromptText thePromptText;
+    //get green signal for that both players are in
+    bool allOK = true;
+    bool isMoveUpdated = false;
+    bool userMoveChecked = false;
+    bool movementCompleted = false;
+    //List that checks the details...
+    List<UserMovesListData> userMoves = new List<UserMovesListData>();
 
     // Update is called once per frame
     void Update() {
-        
+
         if(theStateManager.IsDoneRolling == false || theStateManager.HasToChoose == true) {
             return;
         }
+        if(isMoveUpdated == true) {
+            checkForUserMoves();
+            isMoveUpdated = false;
+        }
+        if(userMoveChecked == true) {
+            theStateManager.NewTurn();
+            movementCompleted = false;
+        }
         
-        if(theStateManager.CurrentPlayerId == 0) {     
+        if(theStateManager.CurrentPlayerId == 0 && userMoves[0].player1Turn == true && movementCompleted == false) {     
             int spacesToMove = theStateManager.diceValue;
+
             Tile finalTile = currentTile;
             for(int i = 0; i < spacesToMove; i++) {
                 if(finalTile == null) {
@@ -133,10 +153,68 @@ public class Player1Piece : MonoBehaviour {
                     }
                 }
             }
-
+            movementCompleted = true;
             currentTile = finalTile;
-            theStateManager.NewTurn();
-    
+            playerUpadtes(false, true, theStateManager.PlayerOneAxe, theStateManager.PlayerTwoAxe, theStateManager.PlayerOneSnakeCharmer,
+            theStateManager.PlayerTwoSnakeCharmer, 0, 0, spacesToMove, 0, theStoreData.player1uid, theStoreData.player2uid);
         }
+    }
+
+    public void playerUpadtes(bool player1Turn, bool player2Turn, int player1AXE, int player2AXE, int player1SnakeC, int player2SnakeC,
+    int player1Result, int player2Result, int player1DiceValue, int player2DiceValue, string uidofUserCreatedtheRoom, string secondUserUID)
+    {
+        FirebaseFirestore _refrence = FirebaseFirestore.DefaultInstance;
+        Dictionary<string, object> updates = new Dictionary<string, object>
+                        {
+                            {"player1DiceValue",  player1DiceValue},
+                            {"player2DiceValue",  player1DiceValue},
+                            {"player1Result",player1Result},
+                            {"player2Result",player1Result},
+                            {"player1AXE",player1AXE},
+                            {"player2AXE",player2AXE},
+                            {"player1SnakeC",player1SnakeC},
+                            {"player2SnakeC",player2SnakeC},
+                            {"player1Turn",player1Turn},
+                            {"player2Turn",player2Turn},
+                        };
+        _refrence.Collection("Room").Document(uidofUserCreatedtheRoom).Collection("HelloD").Document(uidofUserCreatedtheRoom + secondUserUID)
+        .UpdateAsync(updates).ContinueWith(task => { 
+            Debug.Log("Update Moves"); 
+            isMoveUpdated = true;    
+        });
+    }
+
+    public void checkForUserMoves() {
+        FirebaseFirestore _refrence = FirebaseFirestore.DefaultInstance;
+        _refrence.Collection("Room").Document(theStoreData.player1uid).Collection("HelloD").GetSnapshotAsync().ContinueWith(task =>
+        {
+            QuerySnapshot snapshots = task.Result;
+            foreach (DocumentSnapshot document in snapshots.Documents)
+            {
+                Dictionary<string, object> aLLLData = document.ToDictionary();
+                UserMovesListData daata = new UserMovesListData
+                {
+                    player1Result = Convert.ToInt32(aLLLData["player1Result"].ToString()),
+                    player2Result = Convert.ToInt32(aLLLData["player2Result"].ToString()),
+                    player1DiceValue = Convert.ToInt32(aLLLData["player1DiceValue"].ToString()),
+                    player2DiceValue = Convert.ToInt32(aLLLData["player2DiceValue"].ToString()),
+                    player1Turn = bool.Parse(aLLLData["player1Turn"].ToString()),
+                    player2Turn = bool.Parse(aLLLData["player2Turn"].ToString()),
+                    player1AXE = Convert.ToInt32(aLLLData["player1AXE"].ToString()),
+                    player2AXE = Convert.ToInt32(aLLLData["player2AXE"].ToString()),
+                    player1SnakeC = Convert.ToInt32(aLLLData["player1SnakeC"].ToString()),
+                    player2SnakeC = Convert.ToInt32(aLLLData["player2SnakeC"].ToString()),
+                    player1uid = Convert.ToInt32(aLLLData["player1uid"].ToString()),
+                    player2uid = Convert.ToInt32(aLLLData["player2uid"].ToString()),
+                };
+                if(userMoves.Count > 1) {
+                    userMoves.Clear();
+                }
+                userMoves.Add(daata);
+            }
+            if(userMoves[0].player1Result != -1) {
+                userMoveChecked = true;
+            }
+        });
     }
 }
