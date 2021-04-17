@@ -9,6 +9,8 @@ public class Player2Piece : MonoBehaviour {
         theStateManager = GameObject.FindObjectOfType<StateManager>();
         theWinnerText = GameObject.FindObjectOfType<WinnerText>();
         thePromptText = GameObject.FindObjectOfType<PromptText>();
+        thefokt = GameObject.FindObjectOfType<fokat>();
+       
     }
 
     public Tile StartingTile;
@@ -18,9 +20,12 @@ public class Player2Piece : MonoBehaviour {
     StateManager theStateManager;
     WinnerText theWinnerText;
     PromptText thePromptText;
+    fokat thefokt;
+
     // Update is called once per frame
     void Update() {
         if(theStateManager.IsDoneRolling == false || theStateManager.HasToChoose == true) {
+           
             return;
         }
     

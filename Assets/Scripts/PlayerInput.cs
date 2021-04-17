@@ -12,10 +12,12 @@ public class PlayerInput : MonoBehaviour
     [SerializeField] private Button continueButton = null;
 
     private const string PlayerPrefsNameKey = "PlayerName";
-
+    
     private void Start()
     {
+        continueButton.interactable = false;
         SetUpInputField();
+        DontDestroyOnLoad(this.gameObject);
     }
 
     private void SetUpInputField()
@@ -31,7 +33,10 @@ public class PlayerInput : MonoBehaviour
 
     public void SetPlayerName(string name)
     {
-        continueButton.interactable = !string.IsNullOrEmpty(name);
+       
+            continueButton.interactable = true;
+       
+        //continueButton.interactable = !string.IsNullOrEmpty(name);
     }
 
     public void SavePlayerName()

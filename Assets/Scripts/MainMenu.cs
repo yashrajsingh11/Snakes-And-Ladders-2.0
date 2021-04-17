@@ -14,10 +14,15 @@ public class MainMenu : MonoBehaviourPunCallbacks
      public GameObject findOpponent = null;
      public GameObject waitingStatus = null;
     public Text waitingStatusText = null;
-
+    fokat thefokt;
+    
     private bool isConnecting = false;
     private const string GameVersion = "0.1";
     private const int MaxPlayersPerRoom = 2;
+
+    public void Start(){
+        thefokt = GameObject.FindObjectOfType<fokat>();
+    }
 
     private void Awake()
     {
@@ -26,14 +31,15 @@ public class MainMenu : MonoBehaviourPunCallbacks
 
     public void findopponent()
     {
+        
         isConnecting = true;
-
         findOpponent.SetActive(false);
         waitingStatus.SetActive(true);
         waitingStatusText.text = "Loading...";
         if (PhotonNetwork.IsConnected)
         {
             PhotonNetwork.JoinRandomRoom();
+
         }
         else
         {
@@ -70,6 +76,7 @@ public class MainMenu : MonoBehaviourPunCallbacks
         int playerCount = PhotonNetwork.CurrentRoom.PlayerCount;
         if(playerCount != MaxPlayersPerRoom)
         {
+            thefokt.isHost = true;
             waitingStatusText.text = "Waiting";
             Debug.Log("Client is waiting");
         }

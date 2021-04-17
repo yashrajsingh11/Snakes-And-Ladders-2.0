@@ -1,33 +1,49 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Photon.Pun;
 
-public class Player1Piece : MonoBehaviour {
+public class Player1Piece : MonoBehaviourPun {
     // Start is called before the first frame update
     void Start() {
         theStateManager = GameObject.FindObjectOfType<StateManager>();
         theWinnerText = GameObject.FindObjectOfType<WinnerText>();
         thePromptText = GameObject.FindObjectOfType<PromptText>();
+        mainMenu = GameObject.FindObjectOfType<MainMenu>();
+        thefokt = GameObject.FindObjectOfType<fokat>();
     }
 
     public Tile StartingTile;
     public AudioSource myFx;
     public AudioClip moveFx;
+
     Tile currentTile;
+    fokat thefokt;
     StateManager theStateManager;
     WinnerText theWinnerText;
     PromptText thePromptText;
+    MainMenu mainMenu;
 
     // Update is called once per frame
-    void Update() {
-        if(theStateManager.IsDoneRolling == false || theStateManager.HasToChoose == true) {
+    void Update() 
+    {
+        //Debug.Log(thefokt.isHost);
+        if(photonView.IsMine){
+            inoutMovement();
+        }
+    }
+
+    public void inoutMovement()
+    {
+        if(theStateManager.IsDoneRolling == false || theStateManager.HasToChoose == true || thefokt.isHost == false) {
             return;
         }
         
         if(theStateManager.CurrentPlayerId == 0) {     
         
             int spacesToMove = theStateManager.diceValue;
+            
             Tile finalTile = currentTile;
         
             for(int i = 0; i < spacesToMove; i++) {
@@ -59,6 +75,7 @@ public class Player1Piece : MonoBehaviour {
             }
         
             this.transform.position = finalTile.transform.position;
+            Vector3 pos = finalTile.transform.position;
             myFx.PlayOneShot(moveFx);
 
             if(finalTile.NextTiles.Length > 1) {
@@ -150,4 +167,5 @@ public class Player1Piece : MonoBehaviour {
     
         }
     }
+
 }
