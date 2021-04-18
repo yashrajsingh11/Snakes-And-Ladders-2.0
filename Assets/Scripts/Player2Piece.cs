@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Photon.Pun;
 
-public class Player2Piece : MonoBehaviour {
+public class Player2Piece : MonoBehaviourPun {
     // Start is called before the first frame update
     void Start() {
         theStateManager = GameObject.FindObjectOfType<StateManager>();
@@ -24,11 +25,16 @@ public class Player2Piece : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
+        callit();
+	}
+
+   
+
+    public void callit(){
         if(theStateManager.IsDoneRolling == false || theStateManager.HasToChoose == true) {
-           
             return;
         }
-    
+       // int playerID = (int)(GetComponent<PhotonView>().owner.customProperties["PlayerID"]);
     	if(theStateManager.CurrentPlayerId == 1) {    
     
 	        int spacesToMove = theStateManager.diceValue;
@@ -153,7 +159,6 @@ public class Player2Piece : MonoBehaviour {
         	theStateManager.NewTurn();
 
     	}
-
-	}
+    }
 
 }

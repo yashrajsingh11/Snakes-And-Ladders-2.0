@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4465803, g: 0.49641556, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465794, g: 0.49641508, b: 0.57481784, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -11421,6 +11421,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player1_piece
       objectReference: {fileID: 0}
+    - target: {fileID: 8994570619452127070, guid: db89d53b13060544db74825ef5cf3b81,
+        type: 3}
+      propertyPath: OwnershipTransfer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db89d53b13060544db74825ef5cf3b81, type: 3}
 --- !u!1 &1358811873 stripped
@@ -17222,6 +17227,11 @@ PrefabInstance:
       propertyPath: sceneViewId
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: -985788121001938116, guid: 56708f83743ceb445ac5426cf5a393ad,
+        type: 3}
+      propertyPath: OwnershipTransfer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6717921224701673088, guid: 56708f83743ceb445ac5426cf5a393ad,
         type: 3}
       propertyPath: m_RootOrder
@@ -17282,6 +17292,11 @@ PrefabInstance:
       propertyPath: StartingTile
       value: 
       objectReference: {fileID: 853809273}
+    - target: {fileID: 6717921224701673091, guid: 56708f83743ceb445ac5426cf5a393ad,
+        type: 3}
+      propertyPath: Pan2D
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6717921224701673103, guid: 56708f83743ceb445ac5426cf5a393ad,
         type: 3}
       propertyPath: m_Name
@@ -17295,3 +17310,15 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6717921225005373800}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6717921225005373802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6717921225005373801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a270dc8b3831fb42b08cf28d45f4ef3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

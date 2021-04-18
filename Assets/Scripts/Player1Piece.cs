@@ -18,6 +18,7 @@ public class Player1Piece : MonoBehaviourPun {
     public AudioSource myFx;
     public AudioClip moveFx;
 
+    //public Player player{get; private set;}
     Tile currentTile;
     fokat thefokt;
     StateManager theStateManager;
@@ -29,17 +30,19 @@ public class Player1Piece : MonoBehaviourPun {
     void Update() 
     {
         //Debug.Log(thefokt.isHost);
-        if(photonView.IsMine){
+        //if(photonView.IsMine){
             inoutMovement();
-        }
+     
     }
 
     public void inoutMovement()
     {
-        if(theStateManager.IsDoneRolling == false || theStateManager.HasToChoose == true || thefokt.isHost == false) {
+        if(theStateManager.IsDoneRolling == false || theStateManager.HasToChoose == true) {
             return;
         }
         
+        //int playerID = player.CustomProperties["PlayerID"];
+
         if(theStateManager.CurrentPlayerId == 0) {     
         
             int spacesToMove = theStateManager.diceValue;
