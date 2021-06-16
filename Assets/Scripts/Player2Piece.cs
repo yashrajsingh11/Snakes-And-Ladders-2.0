@@ -35,7 +35,7 @@ public class Player2Piece : MonoBehaviourPun {
             return;
         }
        // int playerID = (int)(GetComponent<PhotonView>().owner.customProperties["PlayerID"]);
-    	if(theStateManager.CurrentPlayerId == 1) {    
+    	if(!PhotonNetwork.IsMasterClient) {    
     
 	        int spacesToMove = theStateManager.diceValue;
     	    Tile finalTile = currentTile;

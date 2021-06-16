@@ -43,7 +43,7 @@ public class Player1Piece : MonoBehaviourPun {
         
         //int playerID = player.CustomProperties["PlayerID"];
 
-        if(theStateManager.CurrentPlayerId == 0) {     
+        if(PhotonNetwork.IsMasterClient) {     
         
             int spacesToMove = theStateManager.diceValue;
             
