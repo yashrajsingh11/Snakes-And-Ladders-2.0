@@ -312,7 +312,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Play: {fileID: 2117989896}
   Cancel: {fileID: 632489686}
-  roomSize: 2
+  roomSize: 3
 --- !u!4 &220292303
 Transform:
   m_ObjectHideFlags: 0

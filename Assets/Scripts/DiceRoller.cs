@@ -17,7 +17,7 @@ public class DiceRoller : MonoBehaviour
     PassingData myPassingData;
     private PhotonView PV;
     public int DiceValue;
-    public int numberOfPlayers = 2;
+    public int numberOfPlayers = 3;
 
     public int currentPlayerId = 0;
     private bool isLucky = false;
@@ -42,6 +42,7 @@ public class DiceRoller : MonoBehaviour
     public bool counterPlayerChose = false;
     public GameObject luckyMenu1;
     public GameObject luckyMenu2;
+    public GameObject myObject;
 
     // Update is called once per frame
     void Update()
@@ -50,6 +51,14 @@ public class DiceRoller : MonoBehaviour
         {
             luckyMenu1.SetActive(false);
             luckyMenu2.SetActive(false);
+        }
+        if(myPassingData.myId - 1 != currentPlayerId)
+        {
+            myObject.SetActive(false);
+        }
+        else
+        {
+            myObject.SetActive(true);
         }
     }
 
@@ -181,8 +190,8 @@ public class DiceRoller : MonoBehaviour
 
     void checkLucky()
     {
-        int check = Random.Range(1,11);
-        if(check == 6)
+        int check = Random.Range(1,7);
+        if(check == 4)
         {
             isLucky = true;
             StartCoroutine(DisplayLucky());

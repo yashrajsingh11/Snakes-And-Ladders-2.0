@@ -55,7 +55,7 @@ public class PlayerMovement : MonoBehaviour
     void RPC_SyncCanChooseForLadder(int localId)
     {   
         Debug.Log("canChoose Synced");
-        myDisplayController.myString = "Player " + ((localId % 2) + 1) + " is choosing";
+        myDisplayController.myString = "Player " + ((localId % 3) + 1) + " is choosing";
         myDiceRoller.canChoose = true;
         myDiceRoller.isLadder = true;
         if((myPassingData.myId - 1) == myDiceRoller.currentPlayerId)
@@ -102,7 +102,7 @@ public class PlayerMovement : MonoBehaviour
         myDiceRoller.nextPlayerWantsToChoose = true;
         myDiceRoller.currentPlayerGetsToChoose = true;
         myDiceRoller.nextPlayerGetsToChoose = true;
-        myDiceRoller.currentPlayerId = ((CurrentPlayerId + 1) % 2);
+        myDiceRoller.currentPlayerId = ((CurrentPlayerId + 1) % 3);
         if((myPassingData.myId - 1) == myDiceRoller.currentPlayerId)
         {
             myDisplayController.myString = "Your turn";
@@ -172,7 +172,7 @@ public class PlayerMovement : MonoBehaviour
 
     IEnumerator LadderCoroutine(Tile finalTile)
     {
-        while(myDiceRoller.Axe[(myDiceRoller.currentPlayerId + 1) % 2] != 0 
+        while(myDiceRoller.Axe[(myDiceRoller.currentPlayerId + 1) % 3] != 0 
             && myDiceRoller.Axe[myDiceRoller.currentPlayerId] != 0 && myDiceRoller.currentPlayerWantsToChoose == true &&
             myDiceRoller.nextPlayerWantsToChoose == true) // player1 and player2 fight for the axe
             {
@@ -209,14 +209,14 @@ public class PlayerMovement : MonoBehaviour
         }
         else if(myDiceRoller.nextPlayerWantsToChoose == true && myDiceRoller.currentPlayerWantsToChoose == true) // nobody skipped checking values of axes now
         {
-            if((myDiceRoller.Axe[(myDiceRoller.currentPlayerId + 1) % 2] == 0 && myDiceRoller.Axe[myDiceRoller.currentPlayerId] != 0) ||
-                (myDiceRoller.Axe[(myDiceRoller.currentPlayerId + 1) % 2] == 0 && myDiceRoller.Axe[myDiceRoller.currentPlayerId] == 0)) //opponent doesnt have axe
+            if((myDiceRoller.Axe[(myDiceRoller.currentPlayerId + 1) % 3] == 0 && myDiceRoller.Axe[myDiceRoller.currentPlayerId] != 0) ||
+                (myDiceRoller.Axe[(myDiceRoller.currentPlayerId + 1) % 3] == 0 && myDiceRoller.Axe[myDiceRoller.currentPlayerId] == 0)) //opponent doesnt have axe
             {
                 Debug.Log("Opponent out of Axes");
                 finalTile = finalTile.NextTiles[1];
                 this.transform.position = finalTile.transform.position;
             } 
-            else if(myDiceRoller.Axe[(myDiceRoller.currentPlayerId + 1) % 2] != 0 && myDiceRoller.Axe[myDiceRoller.currentPlayerId] == 0)//current player doesnt have axe
+            else if(myDiceRoller.Axe[(myDiceRoller.currentPlayerId + 1) % 3] != 0 && myDiceRoller.Axe[myDiceRoller.currentPlayerId] == 0)//current player doesnt have axe
             {
                 Debug.Log("Current Player Out of Axes");
                 yield return StartCoroutine(SecondLadderCoroutine());
@@ -242,7 +242,7 @@ public class PlayerMovement : MonoBehaviour
 
     void LadderHere(Tile finalTile)
     {
-        if(myDiceRoller.Axe[(myDiceRoller.currentPlayerId + 1) % 2] != 0) // checking if next player has axe to stop it from climbing
+        if(myDiceRoller.Axe[(myDiceRoller.currentPlayerId + 1) % 3] != 0) // checking if next player has axe to stop it from climbing
         {
             Debug.Log("Opponent Has Axe");
             StartCoroutine(LadderCoroutine(finalTile));
@@ -305,7 +305,7 @@ public class PlayerMovement : MonoBehaviour
     void RPC_SyncCanChooseForSnakeCharmer(int localId)
     {   
         Debug.Log("canChoose Synced");
-        myDisplayController.myString = "Player " + ((localId % 2) + 1) + " is choosing";
+        myDisplayController.myString = "Player " + ((localId % 3) + 1) + " is choosing";
         myDiceRoller.canChoose = true;
         myDiceRoller.isSnake = true;
         if((myPassingData.myId - 1) == myDiceRoller.currentPlayerId)
@@ -331,7 +331,7 @@ public class PlayerMovement : MonoBehaviour
 
     IEnumerator SnakeCoroutine(Tile finalTile)
     {
-        while(myDiceRoller.SnakeCharmer[(myDiceRoller.currentPlayerId + 1) % 2] != 0 
+        while(myDiceRoller.SnakeCharmer[(myDiceRoller.currentPlayerId + 1) % 3] != 0 
             && myDiceRoller.SnakeCharmer[myDiceRoller.currentPlayerId] != 0 && myDiceRoller.currentPlayerWantsToChoose == true &&
             myDiceRoller.nextPlayerWantsToChoose == true) // player1 and player2 fight for the snakecharmer
             {
@@ -367,14 +367,14 @@ public class PlayerMovement : MonoBehaviour
         }
         else if(myDiceRoller.nextPlayerWantsToChoose == true && myDiceRoller.currentPlayerWantsToChoose == true) // nobody skipped checking values of snakecharmers now
         {
-            if((myDiceRoller.SnakeCharmer[(myDiceRoller.currentPlayerId + 1) % 2] != 0 && myDiceRoller.SnakeCharmer[myDiceRoller.currentPlayerId] == 0) ||
-                (myDiceRoller.SnakeCharmer[(myDiceRoller.currentPlayerId + 1) % 2] == 0 && myDiceRoller.SnakeCharmer[myDiceRoller.currentPlayerId] == 0)) //current player doesnt have snakecharmer
+            if((myDiceRoller.SnakeCharmer[(myDiceRoller.currentPlayerId + 1) % 3] != 0 && myDiceRoller.SnakeCharmer[myDiceRoller.currentPlayerId] == 0) ||
+                (myDiceRoller.SnakeCharmer[(myDiceRoller.currentPlayerId + 1) % 3] == 0 && myDiceRoller.SnakeCharmer[myDiceRoller.currentPlayerId] == 0)) //current player doesnt have snakecharmer
             {
                 Debug.Log("Current Player Out of Snakecharmers");
                 finalTile = finalTile.NextTiles[2];
                 this.transform.position = finalTile.transform.position;
             } 
-            else if(myDiceRoller.SnakeCharmer[(myDiceRoller.currentPlayerId + 1) % 2] == 0 && myDiceRoller.SnakeCharmer[myDiceRoller.currentPlayerId] != 0)//opponent doesnt have snakecharmer
+            else if(myDiceRoller.SnakeCharmer[(myDiceRoller.currentPlayerId + 1) % 3] == 0 && myDiceRoller.SnakeCharmer[myDiceRoller.currentPlayerId] != 0)//opponent doesnt have snakecharmer
             {
                 Debug.Log("Opponent out of snakecharmer");
                 yield return StartCoroutine(SecondSnakeCoroutine());
