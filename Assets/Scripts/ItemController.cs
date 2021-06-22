@@ -46,7 +46,7 @@ public class ItemController : MonoBehaviour
             counterchoseSnakecharmerSkip.SetActive(false);
         }
 
-        if(myDiceRoller.canChoose == true && (myPassingData.myId - 1) == ((myDiceRoller.currentPlayerId + 1) % 3) && myDiceRoller.isLadder == true)
+        if(myDiceRoller.canChoose == true && (myPassingData.myId - 1) == ((myDiceRoller.currentPlayerId + 1) % 4) && myDiceRoller.isLadder == true)
         {
             Debug.Log("Choosing For Axe");
             StartCoroutine(GetsToChooseForAxe());
@@ -54,7 +54,7 @@ public class ItemController : MonoBehaviour
             myDiceRoller.isLadder = false;
         }
 
-        if(myDiceRoller.canChoose == true && (myPassingData.myId - 1) == ((myDiceRoller.currentPlayerId + 1) % 3) && myDiceRoller.isSnake == true)
+        if(myDiceRoller.canChoose == true && (myPassingData.myId - 1) == ((myDiceRoller.currentPlayerId + 1) % 4) && myDiceRoller.isSnake == true)
         {
             Debug.Log("Choosing For SnakeCharmer");
             StartCoroutine(GetsToChooseForSnakeCharmer());
@@ -261,7 +261,7 @@ public class ItemController : MonoBehaviour
         myDiceRoller.nextPlayerWantsToChoose = true;
         myDiceRoller.currentPlayerGetsToChoose = true;
         myDiceRoller.currentPlayerWantsToChoose = true;
-        if((myPassingData.myId - 1) == ((myDiceRoller.currentPlayerId + 1) % 3))
+        if((myPassingData.myId - 1) == ((myDiceRoller.currentPlayerId + 1) % 4))
         {
             allBooleanSynced = true;
         }
@@ -296,7 +296,7 @@ public class ItemController : MonoBehaviour
         myDiceRoller.nextPlayerWantsToChoose = true;
         myDiceRoller.currentPlayerGetsToChoose = true;
         myDiceRoller.currentPlayerWantsToChoose = true;
-        if((myPassingData.myId - 1) == ((myDiceRoller.currentPlayerId + 1) % 3))
+        if((myPassingData.myId - 1) == ((myDiceRoller.currentPlayerId + 1) % 4))
         {
             allBooleanSynced = true;
         }
@@ -331,7 +331,7 @@ public class ItemController : MonoBehaviour
         myDiceRoller.nextPlayerWantsToChoose = false;
         myDiceRoller.currentPlayerGetsToChoose = false;
         myDiceRoller.currentPlayerWantsToChoose = true;
-        if((myPassingData.myId - 1) == ((myDiceRoller.currentPlayerId + 1) % 3))
+        if((myPassingData.myId - 1) == ((myDiceRoller.currentPlayerId + 1) % 4))
         {
             allBooleanSynced = true;
         }

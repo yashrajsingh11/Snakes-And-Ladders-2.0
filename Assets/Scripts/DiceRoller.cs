@@ -17,7 +17,7 @@ public class DiceRoller : MonoBehaviour
     PassingData myPassingData;
     private PhotonView PV;
     public int DiceValue;
-    public int numberOfPlayers = 3;
+    public int numberOfPlayers = 4;
 
     public int currentPlayerId = 0;
     private bool isLucky = false;

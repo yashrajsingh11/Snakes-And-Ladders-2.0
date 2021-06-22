@@ -25,6 +25,10 @@ public class DisplayController : MonoBehaviour
     [SerializeField]
     private Text player3SC;
     [SerializeField]
+    private Text player4Axe;
+    [SerializeField]
+    private Text player4SC;
+    [SerializeField]
     private Text diceValue;
     [SerializeField]
     private Text feed;
@@ -39,6 +43,8 @@ public class DisplayController : MonoBehaviour
         player2SC.text  = "SC : " + myDiceRoller.SnakeCharmer[1];
         player3Axe.text  = "Axe : " + myDiceRoller.Axe[2];
         player3SC.text  = "SC : " + myDiceRoller.SnakeCharmer[2];
+        player4Axe.text  = "Axe : " + myDiceRoller.Axe[3];
+        player4SC.text  = "SC : " + myDiceRoller.SnakeCharmer[3];
         diceValue.text = myDiceRoller.DiceValue + " rolled";
         feed.text = myString;
     }
